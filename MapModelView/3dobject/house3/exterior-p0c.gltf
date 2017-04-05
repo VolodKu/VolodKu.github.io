@@ -1,0 +1,2712 @@
+{
+    "accessors": {
+        "accessor_index_0": {
+            "bufferView": "bufferView_index",
+            "byteOffset": 0,
+            "byteStride": 0,
+            "componentType": 5125,
+            "count": 19374,
+            "type": "SCALAR"
+        },
+        "accessor_index_1": {
+            "bufferView": "bufferView_index",
+            "byteOffset": 77496,
+            "byteStride": 0,
+            "componentType": 5125,
+            "count": 79908,
+            "type": "SCALAR"
+        },
+        "accessor_index_2": {
+            "bufferView": "bufferView_index",
+            "byteOffset": 397128,
+            "byteStride": 0,
+            "componentType": 5125,
+            "count": 624,
+            "type": "SCALAR"
+        },
+        "accessor_index_3": {
+            "bufferView": "bufferView_index",
+            "byteOffset": 399624,
+            "byteStride": 0,
+            "componentType": 5125,
+            "count": 522,
+            "type": "SCALAR"
+        },
+        "accessor_index_4": {
+            "bufferView": "bufferView_index",
+            "byteOffset": 401712,
+            "byteStride": 0,
+            "componentType": 5125,
+            "count": 6,
+            "type": "SCALAR"
+        },
+        "accessor_index_5": {
+            "bufferView": "bufferView_index",
+            "byteOffset": 401736,
+            "byteStride": 0,
+            "componentType": 5125,
+            "count": 31989,
+            "type": "SCALAR"
+        },
+        "accessor_index_6": {
+            "bufferView": "bufferView_index",
+            "byteOffset": 529692,
+            "byteStride": 0,
+            "componentType": 5125,
+            "count": 7872,
+            "type": "SCALAR"
+        },
+        "accessor_index_7": {
+            "bufferView": "bufferView_index",
+            "byteOffset": 561180,
+            "byteStride": 0,
+            "componentType": 5125,
+            "count": 477,
+            "type": "SCALAR"
+        },
+        "accessor_index_8": {
+            "bufferView": "bufferView_index",
+            "byteOffset": 563088,
+            "byteStride": 0,
+            "componentType": 5125,
+            "count": 2640,
+            "type": "SCALAR"
+        },
+        "accessor_index_9": {
+            "bufferView": "bufferView_index",
+            "byteOffset": 573648,
+            "byteStride": 0,
+            "componentType": 5125,
+            "count": 1008,
+            "type": "SCALAR"
+        },
+        "accessor_index_10": {
+            "bufferView": "bufferView_index",
+            "byteOffset": 577680,
+            "byteStride": 0,
+            "componentType": 5125,
+            "count": 1110,
+            "type": "SCALAR"
+        },
+        "accessor_index_11": {
+            "bufferView": "bufferView_index",
+            "byteOffset": 582120,
+            "byteStride": 0,
+            "componentType": 5125,
+            "count": 168,
+            "type": "SCALAR"
+        },
+        "accessor_index_12": {
+            "bufferView": "bufferView_index",
+            "byteOffset": 582792,
+            "byteStride": 0,
+            "componentType": 5125,
+            "count": 4752,
+            "type": "SCALAR"
+        },
+        "accessor_index_13": {
+            "bufferView": "bufferView_index",
+            "byteOffset": 601800,
+            "byteStride": 0,
+            "componentType": 5125,
+            "count": 72,
+            "type": "SCALAR"
+        },
+        "accessor_index_14": {
+            "bufferView": "bufferView_index",
+            "byteOffset": 602088,
+            "byteStride": 0,
+            "componentType": 5125,
+            "count": 36,
+            "type": "SCALAR"
+        },
+        "accessor_index_15": {
+            "bufferView": "bufferView_index",
+            "byteOffset": 602232,
+            "byteStride": 0,
+            "componentType": 5125,
+            "count": 2478,
+            "type": "SCALAR"
+        },
+        "accessor_index_16": {
+            "bufferView": "bufferView_index",
+            "byteOffset": 612144,
+            "byteStride": 0,
+            "componentType": 5125,
+            "count": 204,
+            "type": "SCALAR"
+        },
+        "accessor_index_17": {
+            "bufferView": "bufferView_index",
+            "byteOffset": 612960,
+            "byteStride": 0,
+            "componentType": 5125,
+            "count": 3480,
+            "type": "SCALAR"
+        },
+        "accessor_position": {
+            "bufferView": "bufferView_vertex",
+            "byteOffset": 0,
+            "byteStride": 32,
+            "componentType": 5126,
+            "count": 90285,
+            "min": [
+                -13.210896,
+                -0.000187,
+                -18.322287
+            ],
+            "max": [
+                12.209105,
+                13.128238,
+                18.358221
+            ],
+            "type": "VEC3"
+        },
+        "accessor_normal": {
+            "bufferView": "bufferView_vertex",
+            "byteOffset": 12,
+            "byteStride": 32,
+            "componentType": 5126,
+            "count": 90285,
+            "type": "VEC3"
+        },
+        "accessor_uv": {
+            "bufferView": "bufferView_vertex",
+            "byteOffset": 24,
+            "byteStride": 32,
+            "componentType": 5126,
+            "count": 90285,
+            "type": "VEC2"
+        }
+    },
+    "asset": {
+        "generator": "OBJ2GLTF",
+        "premultipliedAlpha": true,
+        "profile": {
+            "api": "WebGL",
+            "version": "1.0"
+        },
+        "version": 1
+    },
+    "buffers": {
+        "buffer_exterior-p0c": {
+            "byteLength": 3516000,
+            "type": "arraybuffer",
+            "uri": "exterior-p0c.bin"
+        }
+    },
+    "bufferViews": {
+        "bufferView_vertex": {
+            "buffer": "buffer_exterior-p0c",
+            "byteLength": 2889120,
+            "byteOffset": 0,
+            "target": 34962
+        },
+        "bufferView_index": {
+            "buffer": "buffer_exterior-p0c",
+            "byteLength": 626880,
+            "byteOffset": 2889120,
+            "target": 34963
+        }
+    },
+    "extensionsUsed": [],
+    "images": {
+        "image_taupish jointed.1024x1024": {
+            "uri": "taupish jointed.1024x1024.jpg"
+        },
+        "image_grigio tunisi.1024x1024": {
+            "uri": "grigio tunisi.1024x1024.jpg"
+        }
+    },
+    "materials": {
+        "material_Painted_Metal_by_arev_material0_bump": {
+            "name": "Painted_Metal_by_arev_material0_bump",
+            "extensions": {},
+            "values": {
+                "ambient": [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "diffuse": [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "emission": [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "specular": [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "shininess": 96.078431,
+                "transparency": 1
+            },
+            "technique": "technique0"
+        },
+        "material_Katus_vihmaveerenn_material18_bump": {
+            "name": "Katus_vihmaveerenn_material18_bump",
+            "extensions": {},
+            "values": {
+                "ambient": [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "diffuse": [
+                    0.5,
+                    0.5,
+                    0.5,
+                    1
+                ],
+                "emission": [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "specular": [
+                    0.072549,
+                    0.072549,
+                    0.072549,
+                    1
+                ],
+                "shininess": 96.078431,
+                "transparency": 1
+            },
+            "technique": "technique1"
+        },
+        "material_Cadimage_Phormiu_material20_diffuse": {
+            "name": "Cadimage_Phormiu_material20_diffuse",
+            "extensions": {},
+            "values": {
+                "ambient": [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "diffuse": [
+                    0.690196,
+                    0.690196,
+                    0.690196,
+                    1
+                ],
+                "emission": [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "specular": [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "shininess": 96.078431,
+                "transparency": 1
+            },
+            "technique": "technique2"
+        },
+        "material_grey_stone_tile_material14_bump": {
+            "name": "grey_stone_tile_material14_bump",
+            "extensions": {},
+            "values": {
+                "ambient": [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "diffuse": "texture_taupish jointed.1024x1024",
+                "emission": [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "specular": [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "shininess": 96.078431,
+                "transparency": 1
+            },
+            "technique": "technique3"
+        },
+        "material_GDLM25_pictmat_material12_diffuse": {
+            "name": "GDLM25_pictmat_material12_diffuse",
+            "extensions": {},
+            "values": {
+                "ambient": [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "diffuse": [
+                    0.690196,
+                    0.690196,
+                    0.690196,
+                    1
+                ],
+                "emission": [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "specular": [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "shininess": 96.078431,
+                "transparency": 1
+            },
+            "technique": "technique4"
+        },
+        "material_whitewash_paint_material3_bump": {
+            "name": "whitewash_paint_material3_bump",
+            "extensions": {},
+            "values": {
+                "ambient": [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "diffuse": [
+                    1,
+                    1,
+                    0.960784,
+                    1
+                ],
+                "emission": [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "specular": [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "shininess": 96.078431,
+                "transparency": 1
+            },
+            "technique": "technique5"
+        },
+        "material_Metal_Stainless__material5_diffuse": {
+            "name": "Metal_Stainless__material5_diffuse",
+            "extensions": {},
+            "values": {
+                "ambient": [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "diffuse": [
+                    0.690196,
+                    0.690196,
+                    0.690196,
+                    1
+                ],
+                "emission": [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "specular": [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "shininess": 96.078431,
+                "transparency": 1
+            },
+            "technique": "technique6"
+        },
+        "material_Metal_Chrome_material6_diffuse": {
+            "name": "Metal_Chrome_material6_diffuse",
+            "extensions": {},
+            "values": {
+                "ambient": [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "diffuse": [
+                    0.690196,
+                    0.690196,
+                    0.690196,
+                    1
+                ],
+                "emission": [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "specular": [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "shininess": 96.078431,
+                "transparency": 1
+            },
+            "technique": "technique7"
+        },
+        "material_Metal_Aluminium_material4_diffuse": {
+            "name": "Metal_Aluminium_material4_diffuse",
+            "extensions": {},
+            "values": {
+                "ambient": [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "diffuse": [
+                    0.690196,
+                    0.690196,
+                    0.690196,
+                    1
+                ],
+                "emission": [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "specular": [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "shininess": 96.078431,
+                "transparency": 1
+            },
+            "technique": "technique8"
+        },
+        "material_Arch_Glass512311_material1_brdf": {
+            "name": "Arch_Glass512311_material1_brdf",
+            "extensions": {},
+            "values": {
+                "ambient": [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "diffuse": [
+                    1,
+                    1,
+                    1,
+                    1
+                ],
+                "emission": [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "specular": [
+                    0.5,
+                    0.5,
+                    0.5,
+                    1
+                ],
+                "shininess": 96.078431,
+                "transparency": 1
+            },
+            "technique": "technique9"
+        },
+        "material_Metal_Iron_material11_diffuse": {
+            "name": "Metal_Iron_material11_diffuse",
+            "extensions": {},
+            "values": {
+                "ambient": [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "diffuse": [
+                    0.690196,
+                    0.690196,
+                    0.690196,
+                    1
+                ],
+                "emission": [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "specular": [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "shininess": 96.078431,
+                "transparency": 1
+            },
+            "technique": "technique10"
+        },
+        "material_Stn_Marble_White_material9_diffuse": {
+            "name": "Stn_Marble_White_material9_diffuse",
+            "extensions": {},
+            "values": {
+                "ambient": [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "diffuse": [
+                    0.690196,
+                    0.690196,
+                    0.690196,
+                    1
+                ],
+                "emission": [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "specular": [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "shininess": 96.078431,
+                "transparency": 1
+            },
+            "technique": "technique11"
+        },
+        "material_Surface_Ceramics_material10_diffuse": {
+            "name": "Surface_Ceramics_material10_diffuse",
+            "extensions": {},
+            "values": {
+                "ambient": [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "diffuse": [
+                    0.690196,
+                    0.690196,
+                    0.690196,
+                    1
+                ],
+                "emission": [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "specular": [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "shininess": 96.078431,
+                "transparency": 1
+            },
+            "technique": "technique12"
+        },
+        "material_stone_grey_tunisi_material19_bump": {
+            "name": "stone_grey_tunisi_material19_bump",
+            "extensions": {},
+            "values": {
+                "ambient": [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "diffuse": "texture_grigio tunisi.1024x1024",
+                "emission": [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "specular": [
+                    0.007843,
+                    0.007843,
+                    0.007843,
+                    1
+                ],
+                "shininess": 96.078431,
+                "transparency": 1
+            },
+            "technique": "technique13"
+        },
+        "material_Wood_Pine_material13_diffuse": {
+            "name": "Wood_Pine_material13_diffuse",
+            "extensions": {},
+            "values": {
+                "ambient": [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "diffuse": [
+                    0.690196,
+                    0.690196,
+                    0.690196,
+                    1
+                ],
+                "emission": [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "specular": [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "shininess": 96.078431,
+                "transparency": 1
+            },
+            "technique": "technique14"
+        },
+        "material_Mtl_Chrome_material7_diffuse": {
+            "name": "Mtl_Chrome_material7_diffuse",
+            "extensions": {},
+            "values": {
+                "ambient": [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "diffuse": [
+                    0.690196,
+                    0.690196,
+                    0.690196,
+                    1
+                ],
+                "emission": [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "specular": [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "shininess": 96.078431,
+                "transparency": 1
+            },
+            "technique": "technique15"
+        },
+        "material_Aknad_Uksed_plastik3tw_material16_brdf": {
+            "name": "Aknad_Uksed_plastik3tw_material16_brdf",
+            "extensions": {},
+            "values": {
+                "ambient": [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "diffuse": [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "emission": [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "specular": [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "shininess": 96.078431,
+                "transparency": 1
+            },
+            "technique": "technique16"
+        },
+        "material_Surf_Porcelain_material8_diffuse": {
+            "name": "Surf_Porcelain_material8_diffuse",
+            "extensions": {},
+            "values": {
+                "ambient": [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "diffuse": [
+                    0.690196,
+                    0.690196,
+                    0.690196,
+                    1
+                ],
+                "emission": [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "specular": [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "shininess": 96.078431,
+                "transparency": 1
+            },
+            "technique": "technique17"
+        }
+    },
+    "meshes": {
+        "mesh_exterior-p0c": {
+            "name": "exterior-p0c",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": "accessor_position",
+                        "NORMAL": "accessor_normal",
+                        "TEXCOORD_0": "accessor_uv"
+                    },
+                    "indices": "accessor_index_0",
+                    "material": "material_Painted_Metal_by_arev_material0_bump",
+                    "mode": 4
+                },
+                {
+                    "attributes": {
+                        "POSITION": "accessor_position",
+                        "NORMAL": "accessor_normal",
+                        "TEXCOORD_0": "accessor_uv"
+                    },
+                    "indices": "accessor_index_1",
+                    "material": "material_Katus_vihmaveerenn_material18_bump",
+                    "mode": 4
+                },
+                {
+                    "attributes": {
+                        "POSITION": "accessor_position",
+                        "NORMAL": "accessor_normal",
+                        "TEXCOORD_0": "accessor_uv"
+                    },
+                    "indices": "accessor_index_2",
+                    "material": "material_Cadimage_Phormiu_material20_diffuse",
+                    "mode": 4
+                },
+                {
+                    "attributes": {
+                        "POSITION": "accessor_position",
+                        "NORMAL": "accessor_normal",
+                        "TEXCOORD_0": "accessor_uv"
+                    },
+                    "indices": "accessor_index_3",
+                    "material": "material_grey_stone_tile_material14_bump",
+                    "mode": 4
+                },
+                {
+                    "attributes": {
+                        "POSITION": "accessor_position",
+                        "NORMAL": "accessor_normal",
+                        "TEXCOORD_0": "accessor_uv"
+                    },
+                    "indices": "accessor_index_4",
+                    "material": "material_GDLM25_pictmat_material12_diffuse",
+                    "mode": 4
+                },
+                {
+                    "attributes": {
+                        "POSITION": "accessor_position",
+                        "NORMAL": "accessor_normal",
+                        "TEXCOORD_0": "accessor_uv"
+                    },
+                    "indices": "accessor_index_5",
+                    "material": "material_whitewash_paint_material3_bump",
+                    "mode": 4
+                },
+                {
+                    "attributes": {
+                        "POSITION": "accessor_position",
+                        "NORMAL": "accessor_normal",
+                        "TEXCOORD_0": "accessor_uv"
+                    },
+                    "indices": "accessor_index_6",
+                    "material": "material_Metal_Stainless__material5_diffuse",
+                    "mode": 4
+                },
+                {
+                    "attributes": {
+                        "POSITION": "accessor_position",
+                        "NORMAL": "accessor_normal",
+                        "TEXCOORD_0": "accessor_uv"
+                    },
+                    "indices": "accessor_index_7",
+                    "material": "material_Metal_Chrome_material6_diffuse",
+                    "mode": 4
+                },
+                {
+                    "attributes": {
+                        "POSITION": "accessor_position",
+                        "NORMAL": "accessor_normal",
+                        "TEXCOORD_0": "accessor_uv"
+                    },
+                    "indices": "accessor_index_8",
+                    "material": "material_Metal_Aluminium_material4_diffuse",
+                    "mode": 4
+                },
+                {
+                    "attributes": {
+                        "POSITION": "accessor_position",
+                        "NORMAL": "accessor_normal",
+                        "TEXCOORD_0": "accessor_uv"
+                    },
+                    "indices": "accessor_index_9",
+                    "material": "material_Arch_Glass512311_material1_brdf",
+                    "mode": 4
+                },
+                {
+                    "attributes": {
+                        "POSITION": "accessor_position",
+                        "NORMAL": "accessor_normal",
+                        "TEXCOORD_0": "accessor_uv"
+                    },
+                    "indices": "accessor_index_10",
+                    "material": "material_Metal_Iron_material11_diffuse",
+                    "mode": 4
+                },
+                {
+                    "attributes": {
+                        "POSITION": "accessor_position",
+                        "NORMAL": "accessor_normal",
+                        "TEXCOORD_0": "accessor_uv"
+                    },
+                    "indices": "accessor_index_11",
+                    "material": "material_Stn_Marble_White_material9_diffuse",
+                    "mode": 4
+                },
+                {
+                    "attributes": {
+                        "POSITION": "accessor_position",
+                        "NORMAL": "accessor_normal",
+                        "TEXCOORD_0": "accessor_uv"
+                    },
+                    "indices": "accessor_index_12",
+                    "material": "material_Surface_Ceramics_material10_diffuse",
+                    "mode": 4
+                },
+                {
+                    "attributes": {
+                        "POSITION": "accessor_position",
+                        "NORMAL": "accessor_normal",
+                        "TEXCOORD_0": "accessor_uv"
+                    },
+                    "indices": "accessor_index_13",
+                    "material": "material_stone_grey_tunisi_material19_bump",
+                    "mode": 4
+                },
+                {
+                    "attributes": {
+                        "POSITION": "accessor_position",
+                        "NORMAL": "accessor_normal",
+                        "TEXCOORD_0": "accessor_uv"
+                    },
+                    "indices": "accessor_index_14",
+                    "material": "material_Wood_Pine_material13_diffuse",
+                    "mode": 4
+                },
+                {
+                    "attributes": {
+                        "POSITION": "accessor_position",
+                        "NORMAL": "accessor_normal",
+                        "TEXCOORD_0": "accessor_uv"
+                    },
+                    "indices": "accessor_index_15",
+                    "material": "material_Mtl_Chrome_material7_diffuse",
+                    "mode": 4
+                },
+                {
+                    "attributes": {
+                        "POSITION": "accessor_position",
+                        "NORMAL": "accessor_normal",
+                        "TEXCOORD_0": "accessor_uv"
+                    },
+                    "indices": "accessor_index_16",
+                    "material": "material_Aknad_Uksed_plastik3tw_material16_brdf",
+                    "mode": 4
+                },
+                {
+                    "attributes": {
+                        "POSITION": "accessor_position",
+                        "NORMAL": "accessor_normal",
+                        "TEXCOORD_0": "accessor_uv"
+                    },
+                    "indices": "accessor_index_17",
+                    "material": "material_Surf_Porcelain_material8_diffuse",
+                    "mode": 4
+                }
+            ]
+        }
+    },
+    "nodes": {
+        "node_exterior-p0c": {
+            "children": [],
+            "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1
+            ],
+            "meshes": [
+                "mesh_exterior-p0c"
+            ],
+            "name": "exterior-p0c"
+        }
+    },
+    "samplers": {
+        "sampler_0": {}
+    },
+    "scene": "scene_exterior-p0c",
+    "scenes": {
+        "scene_exterior-p0c": {
+            "nodes": [
+                "node_exterior-p0c"
+            ]
+        }
+    },
+    "textures": {
+        "texture_taupish jointed.1024x1024": {
+            "format": 6407,
+            "internalFormat": 6407,
+            "sampler": "sampler_0",
+            "source": "image_taupish jointed.1024x1024",
+            "target": 3553,
+            "type": 5121
+        },
+        "texture_grigio tunisi.1024x1024": {
+            "format": 6407,
+            "internalFormat": 6407,
+            "sampler": "sampler_0",
+            "source": "image_grigio tunisi.1024x1024",
+            "target": 3553,
+            "type": 5121
+        }
+    },
+    "programs": {
+        "program0": {
+            "attributes": [
+                "a_position",
+                "a_normal",
+                "a_texcoord_0"
+            ],
+            "fragmentShader": "fragmentShader0",
+            "vertexShader": "vertexShader0"
+        },
+        "program1": {
+            "attributes": [
+                "a_position",
+                "a_normal",
+                "a_texcoord_0"
+            ],
+            "fragmentShader": "fragmentShader1",
+            "vertexShader": "vertexShader1"
+        },
+        "program2": {
+            "attributes": [
+                "a_position",
+                "a_normal",
+                "a_texcoord_0"
+            ],
+            "fragmentShader": "fragmentShader2",
+            "vertexShader": "vertexShader2"
+        },
+        "program3": {
+            "attributes": [
+                "a_position",
+                "a_normal",
+                "a_texcoord_0"
+            ],
+            "fragmentShader": "fragmentShader3",
+            "vertexShader": "vertexShader3"
+        },
+        "program4": {
+            "attributes": [
+                "a_position",
+                "a_normal",
+                "a_texcoord_0"
+            ],
+            "fragmentShader": "fragmentShader4",
+            "vertexShader": "vertexShader4"
+        },
+        "program5": {
+            "attributes": [
+                "a_position",
+                "a_normal",
+                "a_texcoord_0"
+            ],
+            "fragmentShader": "fragmentShader5",
+            "vertexShader": "vertexShader5"
+        },
+        "program6": {
+            "attributes": [
+                "a_position",
+                "a_normal",
+                "a_texcoord_0"
+            ],
+            "fragmentShader": "fragmentShader6",
+            "vertexShader": "vertexShader6"
+        },
+        "program7": {
+            "attributes": [
+                "a_position",
+                "a_normal",
+                "a_texcoord_0"
+            ],
+            "fragmentShader": "fragmentShader7",
+            "vertexShader": "vertexShader7"
+        },
+        "program8": {
+            "attributes": [
+                "a_position",
+                "a_normal",
+                "a_texcoord_0"
+            ],
+            "fragmentShader": "fragmentShader8",
+            "vertexShader": "vertexShader8"
+        },
+        "program9": {
+            "attributes": [
+                "a_position",
+                "a_normal",
+                "a_texcoord_0"
+            ],
+            "fragmentShader": "fragmentShader9",
+            "vertexShader": "vertexShader9"
+        },
+        "program10": {
+            "attributes": [
+                "a_position",
+                "a_normal",
+                "a_texcoord_0"
+            ],
+            "fragmentShader": "fragmentShader10",
+            "vertexShader": "vertexShader10"
+        },
+        "program11": {
+            "attributes": [
+                "a_position",
+                "a_normal",
+                "a_texcoord_0"
+            ],
+            "fragmentShader": "fragmentShader11",
+            "vertexShader": "vertexShader11"
+        },
+        "program12": {
+            "attributes": [
+                "a_position",
+                "a_normal",
+                "a_texcoord_0"
+            ],
+            "fragmentShader": "fragmentShader12",
+            "vertexShader": "vertexShader12"
+        },
+        "program13": {
+            "attributes": [
+                "a_position",
+                "a_normal",
+                "a_texcoord_0"
+            ],
+            "fragmentShader": "fragmentShader13",
+            "vertexShader": "vertexShader13"
+        },
+        "program14": {
+            "attributes": [
+                "a_position",
+                "a_normal",
+                "a_texcoord_0"
+            ],
+            "fragmentShader": "fragmentShader14",
+            "vertexShader": "vertexShader14"
+        },
+        "program15": {
+            "attributes": [
+                "a_position",
+                "a_normal",
+                "a_texcoord_0"
+            ],
+            "fragmentShader": "fragmentShader15",
+            "vertexShader": "vertexShader15"
+        },
+        "program16": {
+            "attributes": [
+                "a_position",
+                "a_normal",
+                "a_texcoord_0"
+            ],
+            "fragmentShader": "fragmentShader16",
+            "vertexShader": "vertexShader16"
+        },
+        "program17": {
+            "attributes": [
+                "a_position",
+                "a_normal",
+                "a_texcoord_0"
+            ],
+            "fragmentShader": "fragmentShader17",
+            "vertexShader": "vertexShader17"
+        }
+    },
+    "shaders": {
+        "vertexShader0": {
+            "type": 35633,
+            "uri": "",
+            "extras": {
+                "source": "precision highp float;\nuniform mat4 u_modelViewMatrix;\nuniform mat3 u_normalMatrix;\nuniform mat4 u_projectionMatrix;\nattribute vec3 a_position;\nvarying vec3 v_positionEC;\nattribute vec3 a_normal;\nvarying vec3 v_normal;\nattribute vec2 a_texcoord_0;\nvarying vec2 v_texcoord_0;\nvoid main(void) {\n  vec4 pos = u_modelViewMatrix * vec4(a_position,1.0);\n  v_positionEC = pos.xyz;\n  gl_Position = u_projectionMatrix * pos;\n  v_normal = u_normalMatrix * a_normal;\n  v_texcoord_0 = a_texcoord_0;\n}\n"
+            }
+        },
+        "fragmentShader0": {
+            "type": 35632,
+            "uri": "",
+            "extras": {
+                "source": "precision highp float;\nuniform vec4 u_ambient;\nuniform vec4 u_diffuse;\nuniform vec4 u_emission;\nuniform vec4 u_specular;\nuniform float u_shininess;\nuniform float u_transparency;\nvarying vec3 v_positionEC;\nvarying vec3 v_normal;\nvarying vec2 v_texcoord_0;\nvoid main(void) {\n  vec3 normal = normalize(v_normal);\n  vec4 diffuse = u_diffuse;\n  vec3 diffuseLight = vec3(0.0, 0.0, 0.0);\n  vec3 emission = u_emission.rgb;\n  vec3 ambient = u_ambient.rgb;\n  vec3 viewDir = -normalize(v_positionEC);\n  vec3 ambientLight = vec3(0.0, 0.0, 0.0);\n  ambientLight += vec3(0.1, 0.1, 0.1);\n  vec3 l = vec3(1.0, 1.0, 1.0);\n  diffuseLight += vec3(1.0, 1.0, 1.0) * max(dot(normal,l), 0.);\n  vec3 color = vec3(0.0, 0.0, 0.0);\n  color += diffuse.rgb * diffuseLight;\n  color += emission;\n  color += ambient * ambientLight;\n  gl_FragColor = vec4(color * diffuse.a, diffuse.a * u_transparency);\n}\n"
+            }
+        },
+        "vertexShader1": {
+            "type": 35633,
+            "uri": "",
+            "extras": {
+                "source": "precision highp float;\nuniform mat4 u_modelViewMatrix;\nuniform mat3 u_normalMatrix;\nuniform mat4 u_projectionMatrix;\nattribute vec3 a_position;\nvarying vec3 v_positionEC;\nattribute vec3 a_normal;\nvarying vec3 v_normal;\nattribute vec2 a_texcoord_0;\nvarying vec2 v_texcoord_0;\nvoid main(void) {\n  vec4 pos = u_modelViewMatrix * vec4(a_position,1.0);\n  v_positionEC = pos.xyz;\n  gl_Position = u_projectionMatrix * pos;\n  v_normal = u_normalMatrix * a_normal;\n  v_texcoord_0 = a_texcoord_0;\n}\n"
+            }
+        },
+        "fragmentShader1": {
+            "type": 35632,
+            "uri": "",
+            "extras": {
+                "source": "precision highp float;\nuniform vec4 u_ambient;\nuniform vec4 u_diffuse;\nuniform vec4 u_emission;\nuniform vec4 u_specular;\nuniform float u_shininess;\nuniform float u_transparency;\nvarying vec3 v_positionEC;\nvarying vec3 v_normal;\nvarying vec2 v_texcoord_0;\nvoid main(void) {\n  vec3 normal = normalize(v_normal);\n  vec4 diffuse = u_diffuse;\n  vec3 diffuseLight = vec3(0.0, 0.0, 0.0);\n  vec3 specular = u_specular.rgb;\n  vec3 specularLight = vec3(0.0, 0.0, 0.0);\n  vec3 emission = u_emission.rgb;\n  vec3 ambient = u_ambient.rgb;\n  vec3 viewDir = -normalize(v_positionEC);\n  vec3 ambientLight = vec3(0.0, 0.0, 0.0);\n  ambientLight += vec3(0.1, 0.1, 0.1);\n  vec3 l = vec3(1.0, 1.0, 1.0);\n  diffuseLight += vec3(1.0, 1.0, 1.0) * max(dot(normal,l), 0.);\n  vec3 h = normalize(l + viewDir);\n  float specularIntensity = max(0., pow(max(dot(normal, h), 0.), u_shininess));\n  specularLight += vec3(1.0, 1.0, 1.0) * specularIntensity;\n  vec3 color = vec3(0.0, 0.0, 0.0);\n  color += diffuse.rgb * diffuseLight;\n  color += specular * specularLight;\n  color += emission;\n  color += ambient * ambientLight;\n  gl_FragColor = vec4(color * diffuse.a, diffuse.a * u_transparency);\n}\n"
+            }
+        },
+        "vertexShader2": {
+            "type": 35633,
+            "uri": "",
+            "extras": {
+                "source": "precision highp float;\nuniform mat4 u_modelViewMatrix;\nuniform mat3 u_normalMatrix;\nuniform mat4 u_projectionMatrix;\nattribute vec3 a_position;\nvarying vec3 v_positionEC;\nattribute vec3 a_normal;\nvarying vec3 v_normal;\nattribute vec2 a_texcoord_0;\nvarying vec2 v_texcoord_0;\nvoid main(void) {\n  vec4 pos = u_modelViewMatrix * vec4(a_position,1.0);\n  v_positionEC = pos.xyz;\n  gl_Position = u_projectionMatrix * pos;\n  v_normal = u_normalMatrix * a_normal;\n  v_texcoord_0 = a_texcoord_0;\n}\n"
+            }
+        },
+        "fragmentShader2": {
+            "type": 35632,
+            "uri": "",
+            "extras": {
+                "source": "precision highp float;\nuniform vec4 u_ambient;\nuniform vec4 u_diffuse;\nuniform vec4 u_emission;\nuniform vec4 u_specular;\nuniform float u_shininess;\nuniform float u_transparency;\nvarying vec3 v_positionEC;\nvarying vec3 v_normal;\nvarying vec2 v_texcoord_0;\nvoid main(void) {\n  vec3 normal = normalize(v_normal);\n  vec4 diffuse = u_diffuse;\n  vec3 diffuseLight = vec3(0.0, 0.0, 0.0);\n  vec3 emission = u_emission.rgb;\n  vec3 ambient = u_ambient.rgb;\n  vec3 viewDir = -normalize(v_positionEC);\n  vec3 ambientLight = vec3(0.0, 0.0, 0.0);\n  ambientLight += vec3(0.1, 0.1, 0.1);\n  vec3 l = vec3(1.0, 1.0, 1.0);\n  diffuseLight += vec3(1.0, 1.0, 1.0) * max(dot(normal,l), 0.);\n  vec3 color = vec3(0.0, 0.0, 0.0);\n  color += diffuse.rgb * diffuseLight;\n  color += emission;\n  color += ambient * ambientLight;\n  gl_FragColor = vec4(color * diffuse.a, diffuse.a * u_transparency);\n}\n"
+            }
+        },
+        "vertexShader3": {
+            "type": 35633,
+            "uri": "",
+            "extras": {
+                "source": "precision highp float;\nuniform mat4 u_modelViewMatrix;\nuniform mat3 u_normalMatrix;\nuniform mat4 u_projectionMatrix;\nattribute vec3 a_position;\nvarying vec3 v_positionEC;\nattribute vec3 a_normal;\nvarying vec3 v_normal;\nattribute vec2 a_texcoord_0;\nvarying vec2 v_texcoord_0;\nvoid main(void) {\n  vec4 pos = u_modelViewMatrix * vec4(a_position,1.0);\n  v_positionEC = pos.xyz;\n  gl_Position = u_projectionMatrix * pos;\n  v_normal = u_normalMatrix * a_normal;\n  v_texcoord_0 = a_texcoord_0;\n}\n"
+            }
+        },
+        "fragmentShader3": {
+            "type": 35632,
+            "uri": "",
+            "extras": {
+                "source": "precision highp float;\nuniform vec4 u_ambient;\nuniform sampler2D u_diffuse;\nuniform vec4 u_emission;\nuniform vec4 u_specular;\nuniform float u_shininess;\nuniform float u_transparency;\nvarying vec3 v_positionEC;\nvarying vec3 v_normal;\nvarying vec2 v_texcoord_0;\nvoid main(void) {\n  vec3 normal = normalize(v_normal);\n  vec4 diffuse = texture2D(u_diffuse, v_texcoord_0);\n  vec3 diffuseLight = vec3(0.0, 0.0, 0.0);\n  vec3 emission = u_emission.rgb;\n  vec3 ambient = u_ambient.rgb;\n  vec3 viewDir = -normalize(v_positionEC);\n  vec3 ambientLight = vec3(0.0, 0.0, 0.0);\n  ambientLight += vec3(0.1, 0.1, 0.1);\n  vec3 l = vec3(1.0, 1.0, 1.0);\n  diffuseLight += vec3(1.0, 1.0, 1.0) * max(dot(normal,l), 0.);\n  vec3 color = vec3(0.0, 0.0, 0.0);\n  color += diffuse.rgb * diffuseLight;\n  color += emission;\n  color += ambient * ambientLight;\n  gl_FragColor = vec4(color * diffuse.a, diffuse.a * u_transparency);\n}\n"
+            }
+        },
+        "vertexShader4": {
+            "type": 35633,
+            "uri": "",
+            "extras": {
+                "source": "precision highp float;\nuniform mat4 u_modelViewMatrix;\nuniform mat3 u_normalMatrix;\nuniform mat4 u_projectionMatrix;\nattribute vec3 a_position;\nvarying vec3 v_positionEC;\nattribute vec3 a_normal;\nvarying vec3 v_normal;\nattribute vec2 a_texcoord_0;\nvarying vec2 v_texcoord_0;\nvoid main(void) {\n  vec4 pos = u_modelViewMatrix * vec4(a_position,1.0);\n  v_positionEC = pos.xyz;\n  gl_Position = u_projectionMatrix * pos;\n  v_normal = u_normalMatrix * a_normal;\n  v_texcoord_0 = a_texcoord_0;\n}\n"
+            }
+        },
+        "fragmentShader4": {
+            "type": 35632,
+            "uri": "",
+            "extras": {
+                "source": "precision highp float;\nuniform vec4 u_ambient;\nuniform vec4 u_diffuse;\nuniform vec4 u_emission;\nuniform vec4 u_specular;\nuniform float u_shininess;\nuniform float u_transparency;\nvarying vec3 v_positionEC;\nvarying vec3 v_normal;\nvarying vec2 v_texcoord_0;\nvoid main(void) {\n  vec3 normal = normalize(v_normal);\n  vec4 diffuse = u_diffuse;\n  vec3 diffuseLight = vec3(0.0, 0.0, 0.0);\n  vec3 emission = u_emission.rgb;\n  vec3 ambient = u_ambient.rgb;\n  vec3 viewDir = -normalize(v_positionEC);\n  vec3 ambientLight = vec3(0.0, 0.0, 0.0);\n  ambientLight += vec3(0.1, 0.1, 0.1);\n  vec3 l = vec3(1.0, 1.0, 1.0);\n  diffuseLight += vec3(1.0, 1.0, 1.0) * max(dot(normal,l), 0.);\n  vec3 color = vec3(0.0, 0.0, 0.0);\n  color += diffuse.rgb * diffuseLight;\n  color += emission;\n  color += ambient * ambientLight;\n  gl_FragColor = vec4(color * diffuse.a, diffuse.a * u_transparency);\n}\n"
+            }
+        },
+        "vertexShader5": {
+            "type": 35633,
+            "uri": "",
+            "extras": {
+                "source": "precision highp float;\nuniform mat4 u_modelViewMatrix;\nuniform mat3 u_normalMatrix;\nuniform mat4 u_projectionMatrix;\nattribute vec3 a_position;\nvarying vec3 v_positionEC;\nattribute vec3 a_normal;\nvarying vec3 v_normal;\nattribute vec2 a_texcoord_0;\nvarying vec2 v_texcoord_0;\nvoid main(void) {\n  vec4 pos = u_modelViewMatrix * vec4(a_position,1.0);\n  v_positionEC = pos.xyz;\n  gl_Position = u_projectionMatrix * pos;\n  v_normal = u_normalMatrix * a_normal;\n  v_texcoord_0 = a_texcoord_0;\n}\n"
+            }
+        },
+        "fragmentShader5": {
+            "type": 35632,
+            "uri": "",
+            "extras": {
+                "source": "precision highp float;\nuniform vec4 u_ambient;\nuniform vec4 u_diffuse;\nuniform vec4 u_emission;\nuniform vec4 u_specular;\nuniform float u_shininess;\nuniform float u_transparency;\nvarying vec3 v_positionEC;\nvarying vec3 v_normal;\nvarying vec2 v_texcoord_0;\nvoid main(void) {\n  vec3 normal = normalize(v_normal);\n  vec4 diffuse = u_diffuse;\n  vec3 diffuseLight = vec3(0.0, 0.0, 0.0);\n  vec3 emission = u_emission.rgb;\n  vec3 ambient = u_ambient.rgb;\n  vec3 viewDir = -normalize(v_positionEC);\n  vec3 ambientLight = vec3(0.0, 0.0, 0.0);\n  ambientLight += vec3(0.1, 0.1, 0.1);\n  vec3 l = vec3(1.0, 1.0, 1.0);\n  diffuseLight += vec3(1.0, 1.0, 1.0) * max(dot(normal,l), 0.);\n  vec3 color = vec3(0.0, 0.0, 0.0);\n  color += diffuse.rgb * diffuseLight;\n  color += emission;\n  color += ambient * ambientLight;\n  gl_FragColor = vec4(color * diffuse.a, diffuse.a * u_transparency);\n}\n"
+            }
+        },
+        "vertexShader6": {
+            "type": 35633,
+            "uri": "",
+            "extras": {
+                "source": "precision highp float;\nuniform mat4 u_modelViewMatrix;\nuniform mat3 u_normalMatrix;\nuniform mat4 u_projectionMatrix;\nattribute vec3 a_position;\nvarying vec3 v_positionEC;\nattribute vec3 a_normal;\nvarying vec3 v_normal;\nattribute vec2 a_texcoord_0;\nvarying vec2 v_texcoord_0;\nvoid main(void) {\n  vec4 pos = u_modelViewMatrix * vec4(a_position,1.0);\n  v_positionEC = pos.xyz;\n  gl_Position = u_projectionMatrix * pos;\n  v_normal = u_normalMatrix * a_normal;\n  v_texcoord_0 = a_texcoord_0;\n}\n"
+            }
+        },
+        "fragmentShader6": {
+            "type": 35632,
+            "uri": "",
+            "extras": {
+                "source": "precision highp float;\nuniform vec4 u_ambient;\nuniform vec4 u_diffuse;\nuniform vec4 u_emission;\nuniform vec4 u_specular;\nuniform float u_shininess;\nuniform float u_transparency;\nvarying vec3 v_positionEC;\nvarying vec3 v_normal;\nvarying vec2 v_texcoord_0;\nvoid main(void) {\n  vec3 normal = normalize(v_normal);\n  vec4 diffuse = u_diffuse;\n  vec3 diffuseLight = vec3(0.0, 0.0, 0.0);\n  vec3 emission = u_emission.rgb;\n  vec3 ambient = u_ambient.rgb;\n  vec3 viewDir = -normalize(v_positionEC);\n  vec3 ambientLight = vec3(0.0, 0.0, 0.0);\n  ambientLight += vec3(0.1, 0.1, 0.1);\n  vec3 l = vec3(1.0, 1.0, 1.0);\n  diffuseLight += vec3(1.0, 1.0, 1.0) * max(dot(normal,l), 0.);\n  vec3 color = vec3(0.0, 0.0, 0.0);\n  color += diffuse.rgb * diffuseLight;\n  color += emission;\n  color += ambient * ambientLight;\n  gl_FragColor = vec4(color * diffuse.a, diffuse.a * u_transparency);\n}\n"
+            }
+        },
+        "vertexShader7": {
+            "type": 35633,
+            "uri": "",
+            "extras": {
+                "source": "precision highp float;\nuniform mat4 u_modelViewMatrix;\nuniform mat3 u_normalMatrix;\nuniform mat4 u_projectionMatrix;\nattribute vec3 a_position;\nvarying vec3 v_positionEC;\nattribute vec3 a_normal;\nvarying vec3 v_normal;\nattribute vec2 a_texcoord_0;\nvarying vec2 v_texcoord_0;\nvoid main(void) {\n  vec4 pos = u_modelViewMatrix * vec4(a_position,1.0);\n  v_positionEC = pos.xyz;\n  gl_Position = u_projectionMatrix * pos;\n  v_normal = u_normalMatrix * a_normal;\n  v_texcoord_0 = a_texcoord_0;\n}\n"
+            }
+        },
+        "fragmentShader7": {
+            "type": 35632,
+            "uri": "",
+            "extras": {
+                "source": "precision highp float;\nuniform vec4 u_ambient;\nuniform vec4 u_diffuse;\nuniform vec4 u_emission;\nuniform vec4 u_specular;\nuniform float u_shininess;\nuniform float u_transparency;\nvarying vec3 v_positionEC;\nvarying vec3 v_normal;\nvarying vec2 v_texcoord_0;\nvoid main(void) {\n  vec3 normal = normalize(v_normal);\n  vec4 diffuse = u_diffuse;\n  vec3 diffuseLight = vec3(0.0, 0.0, 0.0);\n  vec3 emission = u_emission.rgb;\n  vec3 ambient = u_ambient.rgb;\n  vec3 viewDir = -normalize(v_positionEC);\n  vec3 ambientLight = vec3(0.0, 0.0, 0.0);\n  ambientLight += vec3(0.1, 0.1, 0.1);\n  vec3 l = vec3(1.0, 1.0, 1.0);\n  diffuseLight += vec3(1.0, 1.0, 1.0) * max(dot(normal,l), 0.);\n  vec3 color = vec3(0.0, 0.0, 0.0);\n  color += diffuse.rgb * diffuseLight;\n  color += emission;\n  color += ambient * ambientLight;\n  gl_FragColor = vec4(color * diffuse.a, diffuse.a * u_transparency);\n}\n"
+            }
+        },
+        "vertexShader8": {
+            "type": 35633,
+            "uri": "",
+            "extras": {
+                "source": "precision highp float;\nuniform mat4 u_modelViewMatrix;\nuniform mat3 u_normalMatrix;\nuniform mat4 u_projectionMatrix;\nattribute vec3 a_position;\nvarying vec3 v_positionEC;\nattribute vec3 a_normal;\nvarying vec3 v_normal;\nattribute vec2 a_texcoord_0;\nvarying vec2 v_texcoord_0;\nvoid main(void) {\n  vec4 pos = u_modelViewMatrix * vec4(a_position,1.0);\n  v_positionEC = pos.xyz;\n  gl_Position = u_projectionMatrix * pos;\n  v_normal = u_normalMatrix * a_normal;\n  v_texcoord_0 = a_texcoord_0;\n}\n"
+            }
+        },
+        "fragmentShader8": {
+            "type": 35632,
+            "uri": "",
+            "extras": {
+                "source": "precision highp float;\nuniform vec4 u_ambient;\nuniform vec4 u_diffuse;\nuniform vec4 u_emission;\nuniform vec4 u_specular;\nuniform float u_shininess;\nuniform float u_transparency;\nvarying vec3 v_positionEC;\nvarying vec3 v_normal;\nvarying vec2 v_texcoord_0;\nvoid main(void) {\n  vec3 normal = normalize(v_normal);\n  vec4 diffuse = u_diffuse;\n  vec3 diffuseLight = vec3(0.0, 0.0, 0.0);\n  vec3 emission = u_emission.rgb;\n  vec3 ambient = u_ambient.rgb;\n  vec3 viewDir = -normalize(v_positionEC);\n  vec3 ambientLight = vec3(0.0, 0.0, 0.0);\n  ambientLight += vec3(0.1, 0.1, 0.1);\n  vec3 l = vec3(1.0, 1.0, 1.0);\n  diffuseLight += vec3(1.0, 1.0, 1.0) * max(dot(normal,l), 0.);\n  vec3 color = vec3(0.0, 0.0, 0.0);\n  color += diffuse.rgb * diffuseLight;\n  color += emission;\n  color += ambient * ambientLight;\n  gl_FragColor = vec4(color * diffuse.a, diffuse.a * u_transparency);\n}\n"
+            }
+        },
+        "vertexShader9": {
+            "type": 35633,
+            "uri": "",
+            "extras": {
+                "source": "precision highp float;\nuniform mat4 u_modelViewMatrix;\nuniform mat3 u_normalMatrix;\nuniform mat4 u_projectionMatrix;\nattribute vec3 a_position;\nvarying vec3 v_positionEC;\nattribute vec3 a_normal;\nvarying vec3 v_normal;\nattribute vec2 a_texcoord_0;\nvarying vec2 v_texcoord_0;\nvoid main(void) {\n  vec4 pos = u_modelViewMatrix * vec4(a_position,1.0);\n  v_positionEC = pos.xyz;\n  gl_Position = u_projectionMatrix * pos;\n  v_normal = u_normalMatrix * a_normal;\n  v_texcoord_0 = a_texcoord_0;\n}\n"
+            }
+        },
+        "fragmentShader9": {
+            "type": 35632,
+            "uri": "",
+            "extras": {
+                "source": "precision highp float;\nuniform vec4 u_ambient;\nuniform vec4 u_diffuse;\nuniform vec4 u_emission;\nuniform vec4 u_specular;\nuniform float u_shininess;\nuniform float u_transparency;\nvarying vec3 v_positionEC;\nvarying vec3 v_normal;\nvarying vec2 v_texcoord_0;\nvoid main(void) {\n  vec3 normal = normalize(v_normal);\n  vec4 diffuse = u_diffuse;\n  vec3 diffuseLight = vec3(0.0, 0.0, 0.0);\n  vec3 specular = u_specular.rgb;\n  vec3 specularLight = vec3(0.0, 0.0, 0.0);\n  vec3 emission = u_emission.rgb;\n  vec3 ambient = u_ambient.rgb;\n  vec3 viewDir = -normalize(v_positionEC);\n  vec3 ambientLight = vec3(0.0, 0.0, 0.0);\n  ambientLight += vec3(0.1, 0.1, 0.1);\n  vec3 l = vec3(1.0, 1.0, 1.0);\n  diffuseLight += vec3(1.0, 1.0, 1.0) * max(dot(normal,l), 0.);\n  vec3 h = normalize(l + viewDir);\n  float specularIntensity = max(0., pow(max(dot(normal, h), 0.), u_shininess));\n  specularLight += vec3(1.0, 1.0, 1.0) * specularIntensity;\n  vec3 color = vec3(0.0, 0.0, 0.0);\n  color += diffuse.rgb * diffuseLight;\n  color += specular * specularLight;\n  color += emission;\n  color += ambient * ambientLight;\n  gl_FragColor = vec4(color * diffuse.a, diffuse.a * u_transparency);\n}\n"
+            }
+        },
+        "vertexShader10": {
+            "type": 35633,
+            "uri": "",
+            "extras": {
+                "source": "precision highp float;\nuniform mat4 u_modelViewMatrix;\nuniform mat3 u_normalMatrix;\nuniform mat4 u_projectionMatrix;\nattribute vec3 a_position;\nvarying vec3 v_positionEC;\nattribute vec3 a_normal;\nvarying vec3 v_normal;\nattribute vec2 a_texcoord_0;\nvarying vec2 v_texcoord_0;\nvoid main(void) {\n  vec4 pos = u_modelViewMatrix * vec4(a_position,1.0);\n  v_positionEC = pos.xyz;\n  gl_Position = u_projectionMatrix * pos;\n  v_normal = u_normalMatrix * a_normal;\n  v_texcoord_0 = a_texcoord_0;\n}\n"
+            }
+        },
+        "fragmentShader10": {
+            "type": 35632,
+            "uri": "",
+            "extras": {
+                "source": "precision highp float;\nuniform vec4 u_ambient;\nuniform vec4 u_diffuse;\nuniform vec4 u_emission;\nuniform vec4 u_specular;\nuniform float u_shininess;\nuniform float u_transparency;\nvarying vec3 v_positionEC;\nvarying vec3 v_normal;\nvarying vec2 v_texcoord_0;\nvoid main(void) {\n  vec3 normal = normalize(v_normal);\n  vec4 diffuse = u_diffuse;\n  vec3 diffuseLight = vec3(0.0, 0.0, 0.0);\n  vec3 emission = u_emission.rgb;\n  vec3 ambient = u_ambient.rgb;\n  vec3 viewDir = -normalize(v_positionEC);\n  vec3 ambientLight = vec3(0.0, 0.0, 0.0);\n  ambientLight += vec3(0.1, 0.1, 0.1);\n  vec3 l = vec3(1.0, 1.0, 1.0);\n  diffuseLight += vec3(1.0, 1.0, 1.0) * max(dot(normal,l), 0.);\n  vec3 color = vec3(0.0, 0.0, 0.0);\n  color += diffuse.rgb * diffuseLight;\n  color += emission;\n  color += ambient * ambientLight;\n  gl_FragColor = vec4(color * diffuse.a, diffuse.a * u_transparency);\n}\n"
+            }
+        },
+        "vertexShader11": {
+            "type": 35633,
+            "uri": "",
+            "extras": {
+                "source": "precision highp float;\nuniform mat4 u_modelViewMatrix;\nuniform mat3 u_normalMatrix;\nuniform mat4 u_projectionMatrix;\nattribute vec3 a_position;\nvarying vec3 v_positionEC;\nattribute vec3 a_normal;\nvarying vec3 v_normal;\nattribute vec2 a_texcoord_0;\nvarying vec2 v_texcoord_0;\nvoid main(void) {\n  vec4 pos = u_modelViewMatrix * vec4(a_position,1.0);\n  v_positionEC = pos.xyz;\n  gl_Position = u_projectionMatrix * pos;\n  v_normal = u_normalMatrix * a_normal;\n  v_texcoord_0 = a_texcoord_0;\n}\n"
+            }
+        },
+        "fragmentShader11": {
+            "type": 35632,
+            "uri": "",
+            "extras": {
+                "source": "precision highp float;\nuniform vec4 u_ambient;\nuniform vec4 u_diffuse;\nuniform vec4 u_emission;\nuniform vec4 u_specular;\nuniform float u_shininess;\nuniform float u_transparency;\nvarying vec3 v_positionEC;\nvarying vec3 v_normal;\nvarying vec2 v_texcoord_0;\nvoid main(void) {\n  vec3 normal = normalize(v_normal);\n  vec4 diffuse = u_diffuse;\n  vec3 diffuseLight = vec3(0.0, 0.0, 0.0);\n  vec3 emission = u_emission.rgb;\n  vec3 ambient = u_ambient.rgb;\n  vec3 viewDir = -normalize(v_positionEC);\n  vec3 ambientLight = vec3(0.0, 0.0, 0.0);\n  ambientLight += vec3(0.1, 0.1, 0.1);\n  vec3 l = vec3(1.0, 1.0, 1.0);\n  diffuseLight += vec3(1.0, 1.0, 1.0) * max(dot(normal,l), 0.);\n  vec3 color = vec3(0.0, 0.0, 0.0);\n  color += diffuse.rgb * diffuseLight;\n  color += emission;\n  color += ambient * ambientLight;\n  gl_FragColor = vec4(color * diffuse.a, diffuse.a * u_transparency);\n}\n"
+            }
+        },
+        "vertexShader12": {
+            "type": 35633,
+            "uri": "",
+            "extras": {
+                "source": "precision highp float;\nuniform mat4 u_modelViewMatrix;\nuniform mat3 u_normalMatrix;\nuniform mat4 u_projectionMatrix;\nattribute vec3 a_position;\nvarying vec3 v_positionEC;\nattribute vec3 a_normal;\nvarying vec3 v_normal;\nattribute vec2 a_texcoord_0;\nvarying vec2 v_texcoord_0;\nvoid main(void) {\n  vec4 pos = u_modelViewMatrix * vec4(a_position,1.0);\n  v_positionEC = pos.xyz;\n  gl_Position = u_projectionMatrix * pos;\n  v_normal = u_normalMatrix * a_normal;\n  v_texcoord_0 = a_texcoord_0;\n}\n"
+            }
+        },
+        "fragmentShader12": {
+            "type": 35632,
+            "uri": "",
+            "extras": {
+                "source": "precision highp float;\nuniform vec4 u_ambient;\nuniform vec4 u_diffuse;\nuniform vec4 u_emission;\nuniform vec4 u_specular;\nuniform float u_shininess;\nuniform float u_transparency;\nvarying vec3 v_positionEC;\nvarying vec3 v_normal;\nvarying vec2 v_texcoord_0;\nvoid main(void) {\n  vec3 normal = normalize(v_normal);\n  vec4 diffuse = u_diffuse;\n  vec3 diffuseLight = vec3(0.0, 0.0, 0.0);\n  vec3 emission = u_emission.rgb;\n  vec3 ambient = u_ambient.rgb;\n  vec3 viewDir = -normalize(v_positionEC);\n  vec3 ambientLight = vec3(0.0, 0.0, 0.0);\n  ambientLight += vec3(0.1, 0.1, 0.1);\n  vec3 l = vec3(1.0, 1.0, 1.0);\n  diffuseLight += vec3(1.0, 1.0, 1.0) * max(dot(normal,l), 0.);\n  vec3 color = vec3(0.0, 0.0, 0.0);\n  color += diffuse.rgb * diffuseLight;\n  color += emission;\n  color += ambient * ambientLight;\n  gl_FragColor = vec4(color * diffuse.a, diffuse.a * u_transparency);\n}\n"
+            }
+        },
+        "vertexShader13": {
+            "type": 35633,
+            "uri": "",
+            "extras": {
+                "source": "precision highp float;\nuniform mat4 u_modelViewMatrix;\nuniform mat3 u_normalMatrix;\nuniform mat4 u_projectionMatrix;\nattribute vec3 a_position;\nvarying vec3 v_positionEC;\nattribute vec3 a_normal;\nvarying vec3 v_normal;\nattribute vec2 a_texcoord_0;\nvarying vec2 v_texcoord_0;\nvoid main(void) {\n  vec4 pos = u_modelViewMatrix * vec4(a_position,1.0);\n  v_positionEC = pos.xyz;\n  gl_Position = u_projectionMatrix * pos;\n  v_normal = u_normalMatrix * a_normal;\n  v_texcoord_0 = a_texcoord_0;\n}\n"
+            }
+        },
+        "fragmentShader13": {
+            "type": 35632,
+            "uri": "",
+            "extras": {
+                "source": "precision highp float;\nuniform vec4 u_ambient;\nuniform sampler2D u_diffuse;\nuniform vec4 u_emission;\nuniform vec4 u_specular;\nuniform float u_shininess;\nuniform float u_transparency;\nvarying vec3 v_positionEC;\nvarying vec3 v_normal;\nvarying vec2 v_texcoord_0;\nvoid main(void) {\n  vec3 normal = normalize(v_normal);\n  vec4 diffuse = texture2D(u_diffuse, v_texcoord_0);\n  vec3 diffuseLight = vec3(0.0, 0.0, 0.0);\n  vec3 specular = u_specular.rgb;\n  vec3 specularLight = vec3(0.0, 0.0, 0.0);\n  vec3 emission = u_emission.rgb;\n  vec3 ambient = u_ambient.rgb;\n  vec3 viewDir = -normalize(v_positionEC);\n  vec3 ambientLight = vec3(0.0, 0.0, 0.0);\n  ambientLight += vec3(0.1, 0.1, 0.1);\n  vec3 l = vec3(1.0, 1.0, 1.0);\n  diffuseLight += vec3(1.0, 1.0, 1.0) * max(dot(normal,l), 0.);\n  vec3 h = normalize(l + viewDir);\n  float specularIntensity = max(0., pow(max(dot(normal, h), 0.), u_shininess));\n  specularLight += vec3(1.0, 1.0, 1.0) * specularIntensity;\n  vec3 color = vec3(0.0, 0.0, 0.0);\n  color += diffuse.rgb * diffuseLight;\n  color += specular * specularLight;\n  color += emission;\n  color += ambient * ambientLight;\n  gl_FragColor = vec4(color * diffuse.a, diffuse.a * u_transparency);\n}\n"
+            }
+        },
+        "vertexShader14": {
+            "type": 35633,
+            "uri": "",
+            "extras": {
+                "source": "precision highp float;\nuniform mat4 u_modelViewMatrix;\nuniform mat3 u_normalMatrix;\nuniform mat4 u_projectionMatrix;\nattribute vec3 a_position;\nvarying vec3 v_positionEC;\nattribute vec3 a_normal;\nvarying vec3 v_normal;\nattribute vec2 a_texcoord_0;\nvarying vec2 v_texcoord_0;\nvoid main(void) {\n  vec4 pos = u_modelViewMatrix * vec4(a_position,1.0);\n  v_positionEC = pos.xyz;\n  gl_Position = u_projectionMatrix * pos;\n  v_normal = u_normalMatrix * a_normal;\n  v_texcoord_0 = a_texcoord_0;\n}\n"
+            }
+        },
+        "fragmentShader14": {
+            "type": 35632,
+            "uri": "",
+            "extras": {
+                "source": "precision highp float;\nuniform vec4 u_ambient;\nuniform vec4 u_diffuse;\nuniform vec4 u_emission;\nuniform vec4 u_specular;\nuniform float u_shininess;\nuniform float u_transparency;\nvarying vec3 v_positionEC;\nvarying vec3 v_normal;\nvarying vec2 v_texcoord_0;\nvoid main(void) {\n  vec3 normal = normalize(v_normal);\n  vec4 diffuse = u_diffuse;\n  vec3 diffuseLight = vec3(0.0, 0.0, 0.0);\n  vec3 emission = u_emission.rgb;\n  vec3 ambient = u_ambient.rgb;\n  vec3 viewDir = -normalize(v_positionEC);\n  vec3 ambientLight = vec3(0.0, 0.0, 0.0);\n  ambientLight += vec3(0.1, 0.1, 0.1);\n  vec3 l = vec3(1.0, 1.0, 1.0);\n  diffuseLight += vec3(1.0, 1.0, 1.0) * max(dot(normal,l), 0.);\n  vec3 color = vec3(0.0, 0.0, 0.0);\n  color += diffuse.rgb * diffuseLight;\n  color += emission;\n  color += ambient * ambientLight;\n  gl_FragColor = vec4(color * diffuse.a, diffuse.a * u_transparency);\n}\n"
+            }
+        },
+        "vertexShader15": {
+            "type": 35633,
+            "uri": "",
+            "extras": {
+                "source": "precision highp float;\nuniform mat4 u_modelViewMatrix;\nuniform mat3 u_normalMatrix;\nuniform mat4 u_projectionMatrix;\nattribute vec3 a_position;\nvarying vec3 v_positionEC;\nattribute vec3 a_normal;\nvarying vec3 v_normal;\nattribute vec2 a_texcoord_0;\nvarying vec2 v_texcoord_0;\nvoid main(void) {\n  vec4 pos = u_modelViewMatrix * vec4(a_position,1.0);\n  v_positionEC = pos.xyz;\n  gl_Position = u_projectionMatrix * pos;\n  v_normal = u_normalMatrix * a_normal;\n  v_texcoord_0 = a_texcoord_0;\n}\n"
+            }
+        },
+        "fragmentShader15": {
+            "type": 35632,
+            "uri": "",
+            "extras": {
+                "source": "precision highp float;\nuniform vec4 u_ambient;\nuniform vec4 u_diffuse;\nuniform vec4 u_emission;\nuniform vec4 u_specular;\nuniform float u_shininess;\nuniform float u_transparency;\nvarying vec3 v_positionEC;\nvarying vec3 v_normal;\nvarying vec2 v_texcoord_0;\nvoid main(void) {\n  vec3 normal = normalize(v_normal);\n  vec4 diffuse = u_diffuse;\n  vec3 diffuseLight = vec3(0.0, 0.0, 0.0);\n  vec3 emission = u_emission.rgb;\n  vec3 ambient = u_ambient.rgb;\n  vec3 viewDir = -normalize(v_positionEC);\n  vec3 ambientLight = vec3(0.0, 0.0, 0.0);\n  ambientLight += vec3(0.1, 0.1, 0.1);\n  vec3 l = vec3(1.0, 1.0, 1.0);\n  diffuseLight += vec3(1.0, 1.0, 1.0) * max(dot(normal,l), 0.);\n  vec3 color = vec3(0.0, 0.0, 0.0);\n  color += diffuse.rgb * diffuseLight;\n  color += emission;\n  color += ambient * ambientLight;\n  gl_FragColor = vec4(color * diffuse.a, diffuse.a * u_transparency);\n}\n"
+            }
+        },
+        "vertexShader16": {
+            "type": 35633,
+            "uri": "",
+            "extras": {
+                "source": "precision highp float;\nuniform mat4 u_modelViewMatrix;\nuniform mat3 u_normalMatrix;\nuniform mat4 u_projectionMatrix;\nattribute vec3 a_position;\nvarying vec3 v_positionEC;\nattribute vec3 a_normal;\nvarying vec3 v_normal;\nattribute vec2 a_texcoord_0;\nvarying vec2 v_texcoord_0;\nvoid main(void) {\n  vec4 pos = u_modelViewMatrix * vec4(a_position,1.0);\n  v_positionEC = pos.xyz;\n  gl_Position = u_projectionMatrix * pos;\n  v_normal = u_normalMatrix * a_normal;\n  v_texcoord_0 = a_texcoord_0;\n}\n"
+            }
+        },
+        "fragmentShader16": {
+            "type": 35632,
+            "uri": "",
+            "extras": {
+                "source": "precision highp float;\nuniform vec4 u_ambient;\nuniform vec4 u_diffuse;\nuniform vec4 u_emission;\nuniform vec4 u_specular;\nuniform float u_shininess;\nuniform float u_transparency;\nvarying vec3 v_positionEC;\nvarying vec3 v_normal;\nvarying vec2 v_texcoord_0;\nvoid main(void) {\n  vec3 normal = normalize(v_normal);\n  vec4 diffuse = u_diffuse;\n  vec3 diffuseLight = vec3(0.0, 0.0, 0.0);\n  vec3 emission = u_emission.rgb;\n  vec3 ambient = u_ambient.rgb;\n  vec3 viewDir = -normalize(v_positionEC);\n  vec3 ambientLight = vec3(0.0, 0.0, 0.0);\n  ambientLight += vec3(0.1, 0.1, 0.1);\n  vec3 l = vec3(1.0, 1.0, 1.0);\n  diffuseLight += vec3(1.0, 1.0, 1.0) * max(dot(normal,l), 0.);\n  vec3 color = vec3(0.0, 0.0, 0.0);\n  color += diffuse.rgb * diffuseLight;\n  color += emission;\n  color += ambient * ambientLight;\n  gl_FragColor = vec4(color * diffuse.a, diffuse.a * u_transparency);\n}\n"
+            }
+        },
+        "vertexShader17": {
+            "type": 35633,
+            "uri": "",
+            "extras": {
+                "source": "precision highp float;\nuniform mat4 u_modelViewMatrix;\nuniform mat3 u_normalMatrix;\nuniform mat4 u_projectionMatrix;\nattribute vec3 a_position;\nvarying vec3 v_positionEC;\nattribute vec3 a_normal;\nvarying vec3 v_normal;\nattribute vec2 a_texcoord_0;\nvarying vec2 v_texcoord_0;\nvoid main(void) {\n  vec4 pos = u_modelViewMatrix * vec4(a_position,1.0);\n  v_positionEC = pos.xyz;\n  gl_Position = u_projectionMatrix * pos;\n  v_normal = u_normalMatrix * a_normal;\n  v_texcoord_0 = a_texcoord_0;\n}\n"
+            }
+        },
+        "fragmentShader17": {
+            "type": 35632,
+            "uri": "",
+            "extras": {
+                "source": "precision highp float;\nuniform vec4 u_ambient;\nuniform vec4 u_diffuse;\nuniform vec4 u_emission;\nuniform vec4 u_specular;\nuniform float u_shininess;\nuniform float u_transparency;\nvarying vec3 v_positionEC;\nvarying vec3 v_normal;\nvarying vec2 v_texcoord_0;\nvoid main(void) {\n  vec3 normal = normalize(v_normal);\n  vec4 diffuse = u_diffuse;\n  vec3 diffuseLight = vec3(0.0, 0.0, 0.0);\n  vec3 emission = u_emission.rgb;\n  vec3 ambient = u_ambient.rgb;\n  vec3 viewDir = -normalize(v_positionEC);\n  vec3 ambientLight = vec3(0.0, 0.0, 0.0);\n  ambientLight += vec3(0.1, 0.1, 0.1);\n  vec3 l = vec3(1.0, 1.0, 1.0);\n  diffuseLight += vec3(1.0, 1.0, 1.0) * max(dot(normal,l), 0.);\n  vec3 color = vec3(0.0, 0.0, 0.0);\n  color += diffuse.rgb * diffuseLight;\n  color += emission;\n  color += ambient * ambientLight;\n  gl_FragColor = vec4(color * diffuse.a, diffuse.a * u_transparency);\n}\n"
+            }
+        }
+    },
+    "techniques": {
+        "technique0": {
+            "attributes": {
+                "a_position": "position",
+                "a_normal": "normal",
+                "a_texcoord_0": "texcoord_0"
+            },
+            "parameters": {
+                "modelViewMatrix": {
+                    "semantic": "MODELVIEW",
+                    "type": 35676
+                },
+                "normalMatrix": {
+                    "semantic": "MODELVIEWINVERSETRANSPOSE",
+                    "type": 35675
+                },
+                "projectionMatrix": {
+                    "semantic": "PROJECTION",
+                    "type": 35676
+                },
+                "ambient": {
+                    "type": 35666
+                },
+                "diffuse": {
+                    "type": 35666
+                },
+                "emission": {
+                    "type": 35666
+                },
+                "specular": {
+                    "type": 35666
+                },
+                "shininess": {
+                    "type": 5126
+                },
+                "transparency": {
+                    "type": 5126
+                },
+                "position": {
+                    "semantic": "POSITION",
+                    "type": 35665
+                },
+                "normal": {
+                    "semantic": "NORMAL",
+                    "type": 35665
+                },
+                "texcoord_0": {
+                    "semantic": "TEXCOORD_0",
+                    "type": 35664
+                }
+            },
+            "program": "program0",
+            "states": {
+                "enable": [
+                    2884,
+                    2929
+                ]
+            },
+            "uniforms": {
+                "u_modelViewMatrix": "modelViewMatrix",
+                "u_normalMatrix": "normalMatrix",
+                "u_projectionMatrix": "projectionMatrix",
+                "u_ambient": "ambient",
+                "u_diffuse": "diffuse",
+                "u_emission": "emission",
+                "u_specular": "specular",
+                "u_shininess": "shininess",
+                "u_transparency": "transparency"
+            }
+        },
+        "technique1": {
+            "attributes": {
+                "a_position": "position",
+                "a_normal": "normal",
+                "a_texcoord_0": "texcoord_0"
+            },
+            "parameters": {
+                "modelViewMatrix": {
+                    "semantic": "MODELVIEW",
+                    "type": 35676
+                },
+                "normalMatrix": {
+                    "semantic": "MODELVIEWINVERSETRANSPOSE",
+                    "type": 35675
+                },
+                "projectionMatrix": {
+                    "semantic": "PROJECTION",
+                    "type": 35676
+                },
+                "ambient": {
+                    "type": 35666
+                },
+                "diffuse": {
+                    "type": 35666
+                },
+                "emission": {
+                    "type": 35666
+                },
+                "specular": {
+                    "type": 35666
+                },
+                "shininess": {
+                    "type": 5126
+                },
+                "transparency": {
+                    "type": 5126
+                },
+                "position": {
+                    "semantic": "POSITION",
+                    "type": 35665
+                },
+                "normal": {
+                    "semantic": "NORMAL",
+                    "type": 35665
+                },
+                "texcoord_0": {
+                    "semantic": "TEXCOORD_0",
+                    "type": 35664
+                }
+            },
+            "program": "program1",
+            "states": {
+                "enable": [
+                    2884,
+                    2929
+                ]
+            },
+            "uniforms": {
+                "u_modelViewMatrix": "modelViewMatrix",
+                "u_normalMatrix": "normalMatrix",
+                "u_projectionMatrix": "projectionMatrix",
+                "u_ambient": "ambient",
+                "u_diffuse": "diffuse",
+                "u_emission": "emission",
+                "u_specular": "specular",
+                "u_shininess": "shininess",
+                "u_transparency": "transparency"
+            }
+        },
+        "technique2": {
+            "attributes": {
+                "a_position": "position",
+                "a_normal": "normal",
+                "a_texcoord_0": "texcoord_0"
+            },
+            "parameters": {
+                "modelViewMatrix": {
+                    "semantic": "MODELVIEW",
+                    "type": 35676
+                },
+                "normalMatrix": {
+                    "semantic": "MODELVIEWINVERSETRANSPOSE",
+                    "type": 35675
+                },
+                "projectionMatrix": {
+                    "semantic": "PROJECTION",
+                    "type": 35676
+                },
+                "ambient": {
+                    "type": 35666
+                },
+                "diffuse": {
+                    "type": 35666
+                },
+                "emission": {
+                    "type": 35666
+                },
+                "specular": {
+                    "type": 35666
+                },
+                "shininess": {
+                    "type": 5126
+                },
+                "transparency": {
+                    "type": 5126
+                },
+                "position": {
+                    "semantic": "POSITION",
+                    "type": 35665
+                },
+                "normal": {
+                    "semantic": "NORMAL",
+                    "type": 35665
+                },
+                "texcoord_0": {
+                    "semantic": "TEXCOORD_0",
+                    "type": 35664
+                }
+            },
+            "program": "program2",
+            "states": {
+                "enable": [
+                    2884,
+                    2929
+                ]
+            },
+            "uniforms": {
+                "u_modelViewMatrix": "modelViewMatrix",
+                "u_normalMatrix": "normalMatrix",
+                "u_projectionMatrix": "projectionMatrix",
+                "u_ambient": "ambient",
+                "u_diffuse": "diffuse",
+                "u_emission": "emission",
+                "u_specular": "specular",
+                "u_shininess": "shininess",
+                "u_transparency": "transparency"
+            }
+        },
+        "technique3": {
+            "attributes": {
+                "a_position": "position",
+                "a_normal": "normal",
+                "a_texcoord_0": "texcoord_0"
+            },
+            "parameters": {
+                "modelViewMatrix": {
+                    "semantic": "MODELVIEW",
+                    "type": 35676
+                },
+                "normalMatrix": {
+                    "semantic": "MODELVIEWINVERSETRANSPOSE",
+                    "type": 35675
+                },
+                "projectionMatrix": {
+                    "semantic": "PROJECTION",
+                    "type": 35676
+                },
+                "ambient": {
+                    "type": 35666
+                },
+                "diffuse": {
+                    "type": 35678
+                },
+                "emission": {
+                    "type": 35666
+                },
+                "specular": {
+                    "type": 35666
+                },
+                "shininess": {
+                    "type": 5126
+                },
+                "transparency": {
+                    "type": 5126
+                },
+                "position": {
+                    "semantic": "POSITION",
+                    "type": 35665
+                },
+                "normal": {
+                    "semantic": "NORMAL",
+                    "type": 35665
+                },
+                "texcoord_0": {
+                    "semantic": "TEXCOORD_0",
+                    "type": 35664
+                }
+            },
+            "program": "program3",
+            "states": {
+                "enable": [
+                    2884,
+                    2929
+                ]
+            },
+            "uniforms": {
+                "u_modelViewMatrix": "modelViewMatrix",
+                "u_normalMatrix": "normalMatrix",
+                "u_projectionMatrix": "projectionMatrix",
+                "u_ambient": "ambient",
+                "u_diffuse": "diffuse",
+                "u_emission": "emission",
+                "u_specular": "specular",
+                "u_shininess": "shininess",
+                "u_transparency": "transparency"
+            }
+        },
+        "technique4": {
+            "attributes": {
+                "a_position": "position",
+                "a_normal": "normal",
+                "a_texcoord_0": "texcoord_0"
+            },
+            "parameters": {
+                "modelViewMatrix": {
+                    "semantic": "MODELVIEW",
+                    "type": 35676
+                },
+                "normalMatrix": {
+                    "semantic": "MODELVIEWINVERSETRANSPOSE",
+                    "type": 35675
+                },
+                "projectionMatrix": {
+                    "semantic": "PROJECTION",
+                    "type": 35676
+                },
+                "ambient": {
+                    "type": 35666
+                },
+                "diffuse": {
+                    "type": 35666
+                },
+                "emission": {
+                    "type": 35666
+                },
+                "specular": {
+                    "type": 35666
+                },
+                "shininess": {
+                    "type": 5126
+                },
+                "transparency": {
+                    "type": 5126
+                },
+                "position": {
+                    "semantic": "POSITION",
+                    "type": 35665
+                },
+                "normal": {
+                    "semantic": "NORMAL",
+                    "type": 35665
+                },
+                "texcoord_0": {
+                    "semantic": "TEXCOORD_0",
+                    "type": 35664
+                }
+            },
+            "program": "program4",
+            "states": {
+                "enable": [
+                    2884,
+                    2929
+                ]
+            },
+            "uniforms": {
+                "u_modelViewMatrix": "modelViewMatrix",
+                "u_normalMatrix": "normalMatrix",
+                "u_projectionMatrix": "projectionMatrix",
+                "u_ambient": "ambient",
+                "u_diffuse": "diffuse",
+                "u_emission": "emission",
+                "u_specular": "specular",
+                "u_shininess": "shininess",
+                "u_transparency": "transparency"
+            }
+        },
+        "technique5": {
+            "attributes": {
+                "a_position": "position",
+                "a_normal": "normal",
+                "a_texcoord_0": "texcoord_0"
+            },
+            "parameters": {
+                "modelViewMatrix": {
+                    "semantic": "MODELVIEW",
+                    "type": 35676
+                },
+                "normalMatrix": {
+                    "semantic": "MODELVIEWINVERSETRANSPOSE",
+                    "type": 35675
+                },
+                "projectionMatrix": {
+                    "semantic": "PROJECTION",
+                    "type": 35676
+                },
+                "ambient": {
+                    "type": 35666
+                },
+                "diffuse": {
+                    "type": 35666
+                },
+                "emission": {
+                    "type": 35666
+                },
+                "specular": {
+                    "type": 35666
+                },
+                "shininess": {
+                    "type": 5126
+                },
+                "transparency": {
+                    "type": 5126
+                },
+                "position": {
+                    "semantic": "POSITION",
+                    "type": 35665
+                },
+                "normal": {
+                    "semantic": "NORMAL",
+                    "type": 35665
+                },
+                "texcoord_0": {
+                    "semantic": "TEXCOORD_0",
+                    "type": 35664
+                }
+            },
+            "program": "program5",
+            "states": {
+                "enable": [
+                    2884,
+                    2929
+                ]
+            },
+            "uniforms": {
+                "u_modelViewMatrix": "modelViewMatrix",
+                "u_normalMatrix": "normalMatrix",
+                "u_projectionMatrix": "projectionMatrix",
+                "u_ambient": "ambient",
+                "u_diffuse": "diffuse",
+                "u_emission": "emission",
+                "u_specular": "specular",
+                "u_shininess": "shininess",
+                "u_transparency": "transparency"
+            }
+        },
+        "technique6": {
+            "attributes": {
+                "a_position": "position",
+                "a_normal": "normal",
+                "a_texcoord_0": "texcoord_0"
+            },
+            "parameters": {
+                "modelViewMatrix": {
+                    "semantic": "MODELVIEW",
+                    "type": 35676
+                },
+                "normalMatrix": {
+                    "semantic": "MODELVIEWINVERSETRANSPOSE",
+                    "type": 35675
+                },
+                "projectionMatrix": {
+                    "semantic": "PROJECTION",
+                    "type": 35676
+                },
+                "ambient": {
+                    "type": 35666
+                },
+                "diffuse": {
+                    "type": 35666
+                },
+                "emission": {
+                    "type": 35666
+                },
+                "specular": {
+                    "type": 35666
+                },
+                "shininess": {
+                    "type": 5126
+                },
+                "transparency": {
+                    "type": 5126
+                },
+                "position": {
+                    "semantic": "POSITION",
+                    "type": 35665
+                },
+                "normal": {
+                    "semantic": "NORMAL",
+                    "type": 35665
+                },
+                "texcoord_0": {
+                    "semantic": "TEXCOORD_0",
+                    "type": 35664
+                }
+            },
+            "program": "program6",
+            "states": {
+                "enable": [
+                    2884,
+                    2929
+                ]
+            },
+            "uniforms": {
+                "u_modelViewMatrix": "modelViewMatrix",
+                "u_normalMatrix": "normalMatrix",
+                "u_projectionMatrix": "projectionMatrix",
+                "u_ambient": "ambient",
+                "u_diffuse": "diffuse",
+                "u_emission": "emission",
+                "u_specular": "specular",
+                "u_shininess": "shininess",
+                "u_transparency": "transparency"
+            }
+        },
+        "technique7": {
+            "attributes": {
+                "a_position": "position",
+                "a_normal": "normal",
+                "a_texcoord_0": "texcoord_0"
+            },
+            "parameters": {
+                "modelViewMatrix": {
+                    "semantic": "MODELVIEW",
+                    "type": 35676
+                },
+                "normalMatrix": {
+                    "semantic": "MODELVIEWINVERSETRANSPOSE",
+                    "type": 35675
+                },
+                "projectionMatrix": {
+                    "semantic": "PROJECTION",
+                    "type": 35676
+                },
+                "ambient": {
+                    "type": 35666
+                },
+                "diffuse": {
+                    "type": 35666
+                },
+                "emission": {
+                    "type": 35666
+                },
+                "specular": {
+                    "type": 35666
+                },
+                "shininess": {
+                    "type": 5126
+                },
+                "transparency": {
+                    "type": 5126
+                },
+                "position": {
+                    "semantic": "POSITION",
+                    "type": 35665
+                },
+                "normal": {
+                    "semantic": "NORMAL",
+                    "type": 35665
+                },
+                "texcoord_0": {
+                    "semantic": "TEXCOORD_0",
+                    "type": 35664
+                }
+            },
+            "program": "program7",
+            "states": {
+                "enable": [
+                    2884,
+                    2929
+                ]
+            },
+            "uniforms": {
+                "u_modelViewMatrix": "modelViewMatrix",
+                "u_normalMatrix": "normalMatrix",
+                "u_projectionMatrix": "projectionMatrix",
+                "u_ambient": "ambient",
+                "u_diffuse": "diffuse",
+                "u_emission": "emission",
+                "u_specular": "specular",
+                "u_shininess": "shininess",
+                "u_transparency": "transparency"
+            }
+        },
+        "technique8": {
+            "attributes": {
+                "a_position": "position",
+                "a_normal": "normal",
+                "a_texcoord_0": "texcoord_0"
+            },
+            "parameters": {
+                "modelViewMatrix": {
+                    "semantic": "MODELVIEW",
+                    "type": 35676
+                },
+                "normalMatrix": {
+                    "semantic": "MODELVIEWINVERSETRANSPOSE",
+                    "type": 35675
+                },
+                "projectionMatrix": {
+                    "semantic": "PROJECTION",
+                    "type": 35676
+                },
+                "ambient": {
+                    "type": 35666
+                },
+                "diffuse": {
+                    "type": 35666
+                },
+                "emission": {
+                    "type": 35666
+                },
+                "specular": {
+                    "type": 35666
+                },
+                "shininess": {
+                    "type": 5126
+                },
+                "transparency": {
+                    "type": 5126
+                },
+                "position": {
+                    "semantic": "POSITION",
+                    "type": 35665
+                },
+                "normal": {
+                    "semantic": "NORMAL",
+                    "type": 35665
+                },
+                "texcoord_0": {
+                    "semantic": "TEXCOORD_0",
+                    "type": 35664
+                }
+            },
+            "program": "program8",
+            "states": {
+                "enable": [
+                    2884,
+                    2929
+                ]
+            },
+            "uniforms": {
+                "u_modelViewMatrix": "modelViewMatrix",
+                "u_normalMatrix": "normalMatrix",
+                "u_projectionMatrix": "projectionMatrix",
+                "u_ambient": "ambient",
+                "u_diffuse": "diffuse",
+                "u_emission": "emission",
+                "u_specular": "specular",
+                "u_shininess": "shininess",
+                "u_transparency": "transparency"
+            }
+        },
+        "technique9": {
+            "attributes": {
+                "a_position": "position",
+                "a_normal": "normal",
+                "a_texcoord_0": "texcoord_0"
+            },
+            "parameters": {
+                "modelViewMatrix": {
+                    "semantic": "MODELVIEW",
+                    "type": 35676
+                },
+                "normalMatrix": {
+                    "semantic": "MODELVIEWINVERSETRANSPOSE",
+                    "type": 35675
+                },
+                "projectionMatrix": {
+                    "semantic": "PROJECTION",
+                    "type": 35676
+                },
+                "ambient": {
+                    "type": 35666
+                },
+                "diffuse": {
+                    "type": 35666
+                },
+                "emission": {
+                    "type": 35666
+                },
+                "specular": {
+                    "type": 35666
+                },
+                "shininess": {
+                    "type": 5126
+                },
+                "transparency": {
+                    "type": 5126
+                },
+                "position": {
+                    "semantic": "POSITION",
+                    "type": 35665
+                },
+                "normal": {
+                    "semantic": "NORMAL",
+                    "type": 35665
+                },
+                "texcoord_0": {
+                    "semantic": "TEXCOORD_0",
+                    "type": 35664
+                }
+            },
+            "program": "program9",
+            "states": {
+                "enable": [
+                    2884,
+                    2929
+                ]
+            },
+            "uniforms": {
+                "u_modelViewMatrix": "modelViewMatrix",
+                "u_normalMatrix": "normalMatrix",
+                "u_projectionMatrix": "projectionMatrix",
+                "u_ambient": "ambient",
+                "u_diffuse": "diffuse",
+                "u_emission": "emission",
+                "u_specular": "specular",
+                "u_shininess": "shininess",
+                "u_transparency": "transparency"
+            }
+        },
+        "technique10": {
+            "attributes": {
+                "a_position": "position",
+                "a_normal": "normal",
+                "a_texcoord_0": "texcoord_0"
+            },
+            "parameters": {
+                "modelViewMatrix": {
+                    "semantic": "MODELVIEW",
+                    "type": 35676
+                },
+                "normalMatrix": {
+                    "semantic": "MODELVIEWINVERSETRANSPOSE",
+                    "type": 35675
+                },
+                "projectionMatrix": {
+                    "semantic": "PROJECTION",
+                    "type": 35676
+                },
+                "ambient": {
+                    "type": 35666
+                },
+                "diffuse": {
+                    "type": 35666
+                },
+                "emission": {
+                    "type": 35666
+                },
+                "specular": {
+                    "type": 35666
+                },
+                "shininess": {
+                    "type": 5126
+                },
+                "transparency": {
+                    "type": 5126
+                },
+                "position": {
+                    "semantic": "POSITION",
+                    "type": 35665
+                },
+                "normal": {
+                    "semantic": "NORMAL",
+                    "type": 35665
+                },
+                "texcoord_0": {
+                    "semantic": "TEXCOORD_0",
+                    "type": 35664
+                }
+            },
+            "program": "program10",
+            "states": {
+                "enable": [
+                    2884,
+                    2929
+                ]
+            },
+            "uniforms": {
+                "u_modelViewMatrix": "modelViewMatrix",
+                "u_normalMatrix": "normalMatrix",
+                "u_projectionMatrix": "projectionMatrix",
+                "u_ambient": "ambient",
+                "u_diffuse": "diffuse",
+                "u_emission": "emission",
+                "u_specular": "specular",
+                "u_shininess": "shininess",
+                "u_transparency": "transparency"
+            }
+        },
+        "technique11": {
+            "attributes": {
+                "a_position": "position",
+                "a_normal": "normal",
+                "a_texcoord_0": "texcoord_0"
+            },
+            "parameters": {
+                "modelViewMatrix": {
+                    "semantic": "MODELVIEW",
+                    "type": 35676
+                },
+                "normalMatrix": {
+                    "semantic": "MODELVIEWINVERSETRANSPOSE",
+                    "type": 35675
+                },
+                "projectionMatrix": {
+                    "semantic": "PROJECTION",
+                    "type": 35676
+                },
+                "ambient": {
+                    "type": 35666
+                },
+                "diffuse": {
+                    "type": 35666
+                },
+                "emission": {
+                    "type": 35666
+                },
+                "specular": {
+                    "type": 35666
+                },
+                "shininess": {
+                    "type": 5126
+                },
+                "transparency": {
+                    "type": 5126
+                },
+                "position": {
+                    "semantic": "POSITION",
+                    "type": 35665
+                },
+                "normal": {
+                    "semantic": "NORMAL",
+                    "type": 35665
+                },
+                "texcoord_0": {
+                    "semantic": "TEXCOORD_0",
+                    "type": 35664
+                }
+            },
+            "program": "program11",
+            "states": {
+                "enable": [
+                    2884,
+                    2929
+                ]
+            },
+            "uniforms": {
+                "u_modelViewMatrix": "modelViewMatrix",
+                "u_normalMatrix": "normalMatrix",
+                "u_projectionMatrix": "projectionMatrix",
+                "u_ambient": "ambient",
+                "u_diffuse": "diffuse",
+                "u_emission": "emission",
+                "u_specular": "specular",
+                "u_shininess": "shininess",
+                "u_transparency": "transparency"
+            }
+        },
+        "technique12": {
+            "attributes": {
+                "a_position": "position",
+                "a_normal": "normal",
+                "a_texcoord_0": "texcoord_0"
+            },
+            "parameters": {
+                "modelViewMatrix": {
+                    "semantic": "MODELVIEW",
+                    "type": 35676
+                },
+                "normalMatrix": {
+                    "semantic": "MODELVIEWINVERSETRANSPOSE",
+                    "type": 35675
+                },
+                "projectionMatrix": {
+                    "semantic": "PROJECTION",
+                    "type": 35676
+                },
+                "ambient": {
+                    "type": 35666
+                },
+                "diffuse": {
+                    "type": 35666
+                },
+                "emission": {
+                    "type": 35666
+                },
+                "specular": {
+                    "type": 35666
+                },
+                "shininess": {
+                    "type": 5126
+                },
+                "transparency": {
+                    "type": 5126
+                },
+                "position": {
+                    "semantic": "POSITION",
+                    "type": 35665
+                },
+                "normal": {
+                    "semantic": "NORMAL",
+                    "type": 35665
+                },
+                "texcoord_0": {
+                    "semantic": "TEXCOORD_0",
+                    "type": 35664
+                }
+            },
+            "program": "program12",
+            "states": {
+                "enable": [
+                    2884,
+                    2929
+                ]
+            },
+            "uniforms": {
+                "u_modelViewMatrix": "modelViewMatrix",
+                "u_normalMatrix": "normalMatrix",
+                "u_projectionMatrix": "projectionMatrix",
+                "u_ambient": "ambient",
+                "u_diffuse": "diffuse",
+                "u_emission": "emission",
+                "u_specular": "specular",
+                "u_shininess": "shininess",
+                "u_transparency": "transparency"
+            }
+        },
+        "technique13": {
+            "attributes": {
+                "a_position": "position",
+                "a_normal": "normal",
+                "a_texcoord_0": "texcoord_0"
+            },
+            "parameters": {
+                "modelViewMatrix": {
+                    "semantic": "MODELVIEW",
+                    "type": 35676
+                },
+                "normalMatrix": {
+                    "semantic": "MODELVIEWINVERSETRANSPOSE",
+                    "type": 35675
+                },
+                "projectionMatrix": {
+                    "semantic": "PROJECTION",
+                    "type": 35676
+                },
+                "ambient": {
+                    "type": 35666
+                },
+                "diffuse": {
+                    "type": 35678
+                },
+                "emission": {
+                    "type": 35666
+                },
+                "specular": {
+                    "type": 35666
+                },
+                "shininess": {
+                    "type": 5126
+                },
+                "transparency": {
+                    "type": 5126
+                },
+                "position": {
+                    "semantic": "POSITION",
+                    "type": 35665
+                },
+                "normal": {
+                    "semantic": "NORMAL",
+                    "type": 35665
+                },
+                "texcoord_0": {
+                    "semantic": "TEXCOORD_0",
+                    "type": 35664
+                }
+            },
+            "program": "program13",
+            "states": {
+                "enable": [
+                    2884,
+                    2929
+                ]
+            },
+            "uniforms": {
+                "u_modelViewMatrix": "modelViewMatrix",
+                "u_normalMatrix": "normalMatrix",
+                "u_projectionMatrix": "projectionMatrix",
+                "u_ambient": "ambient",
+                "u_diffuse": "diffuse",
+                "u_emission": "emission",
+                "u_specular": "specular",
+                "u_shininess": "shininess",
+                "u_transparency": "transparency"
+            }
+        },
+        "technique14": {
+            "attributes": {
+                "a_position": "position",
+                "a_normal": "normal",
+                "a_texcoord_0": "texcoord_0"
+            },
+            "parameters": {
+                "modelViewMatrix": {
+                    "semantic": "MODELVIEW",
+                    "type": 35676
+                },
+                "normalMatrix": {
+                    "semantic": "MODELVIEWINVERSETRANSPOSE",
+                    "type": 35675
+                },
+                "projectionMatrix": {
+                    "semantic": "PROJECTION",
+                    "type": 35676
+                },
+                "ambient": {
+                    "type": 35666
+                },
+                "diffuse": {
+                    "type": 35666
+                },
+                "emission": {
+                    "type": 35666
+                },
+                "specular": {
+                    "type": 35666
+                },
+                "shininess": {
+                    "type": 5126
+                },
+                "transparency": {
+                    "type": 5126
+                },
+                "position": {
+                    "semantic": "POSITION",
+                    "type": 35665
+                },
+                "normal": {
+                    "semantic": "NORMAL",
+                    "type": 35665
+                },
+                "texcoord_0": {
+                    "semantic": "TEXCOORD_0",
+                    "type": 35664
+                }
+            },
+            "program": "program14",
+            "states": {
+                "enable": [
+                    2884,
+                    2929
+                ]
+            },
+            "uniforms": {
+                "u_modelViewMatrix": "modelViewMatrix",
+                "u_normalMatrix": "normalMatrix",
+                "u_projectionMatrix": "projectionMatrix",
+                "u_ambient": "ambient",
+                "u_diffuse": "diffuse",
+                "u_emission": "emission",
+                "u_specular": "specular",
+                "u_shininess": "shininess",
+                "u_transparency": "transparency"
+            }
+        },
+        "technique15": {
+            "attributes": {
+                "a_position": "position",
+                "a_normal": "normal",
+                "a_texcoord_0": "texcoord_0"
+            },
+            "parameters": {
+                "modelViewMatrix": {
+                    "semantic": "MODELVIEW",
+                    "type": 35676
+                },
+                "normalMatrix": {
+                    "semantic": "MODELVIEWINVERSETRANSPOSE",
+                    "type": 35675
+                },
+                "projectionMatrix": {
+                    "semantic": "PROJECTION",
+                    "type": 35676
+                },
+                "ambient": {
+                    "type": 35666
+                },
+                "diffuse": {
+                    "type": 35666
+                },
+                "emission": {
+                    "type": 35666
+                },
+                "specular": {
+                    "type": 35666
+                },
+                "shininess": {
+                    "type": 5126
+                },
+                "transparency": {
+                    "type": 5126
+                },
+                "position": {
+                    "semantic": "POSITION",
+                    "type": 35665
+                },
+                "normal": {
+                    "semantic": "NORMAL",
+                    "type": 35665
+                },
+                "texcoord_0": {
+                    "semantic": "TEXCOORD_0",
+                    "type": 35664
+                }
+            },
+            "program": "program15",
+            "states": {
+                "enable": [
+                    2884,
+                    2929
+                ]
+            },
+            "uniforms": {
+                "u_modelViewMatrix": "modelViewMatrix",
+                "u_normalMatrix": "normalMatrix",
+                "u_projectionMatrix": "projectionMatrix",
+                "u_ambient": "ambient",
+                "u_diffuse": "diffuse",
+                "u_emission": "emission",
+                "u_specular": "specular",
+                "u_shininess": "shininess",
+                "u_transparency": "transparency"
+            }
+        },
+        "technique16": {
+            "attributes": {
+                "a_position": "position",
+                "a_normal": "normal",
+                "a_texcoord_0": "texcoord_0"
+            },
+            "parameters": {
+                "modelViewMatrix": {
+                    "semantic": "MODELVIEW",
+                    "type": 35676
+                },
+                "normalMatrix": {
+                    "semantic": "MODELVIEWINVERSETRANSPOSE",
+                    "type": 35675
+                },
+                "projectionMatrix": {
+                    "semantic": "PROJECTION",
+                    "type": 35676
+                },
+                "ambient": {
+                    "type": 35666
+                },
+                "diffuse": {
+                    "type": 35666
+                },
+                "emission": {
+                    "type": 35666
+                },
+                "specular": {
+                    "type": 35666
+                },
+                "shininess": {
+                    "type": 5126
+                },
+                "transparency": {
+                    "type": 5126
+                },
+                "position": {
+                    "semantic": "POSITION",
+                    "type": 35665
+                },
+                "normal": {
+                    "semantic": "NORMAL",
+                    "type": 35665
+                },
+                "texcoord_0": {
+                    "semantic": "TEXCOORD_0",
+                    "type": 35664
+                }
+            },
+            "program": "program16",
+            "states": {
+                "enable": [
+                    2884,
+                    2929
+                ]
+            },
+            "uniforms": {
+                "u_modelViewMatrix": "modelViewMatrix",
+                "u_normalMatrix": "normalMatrix",
+                "u_projectionMatrix": "projectionMatrix",
+                "u_ambient": "ambient",
+                "u_diffuse": "diffuse",
+                "u_emission": "emission",
+                "u_specular": "specular",
+                "u_shininess": "shininess",
+                "u_transparency": "transparency"
+            }
+        },
+        "technique17": {
+            "attributes": {
+                "a_position": "position",
+                "a_normal": "normal",
+                "a_texcoord_0": "texcoord_0"
+            },
+            "parameters": {
+                "modelViewMatrix": {
+                    "semantic": "MODELVIEW",
+                    "type": 35676
+                },
+                "normalMatrix": {
+                    "semantic": "MODELVIEWINVERSETRANSPOSE",
+                    "type": 35675
+                },
+                "projectionMatrix": {
+                    "semantic": "PROJECTION",
+                    "type": 35676
+                },
+                "ambient": {
+                    "type": 35666
+                },
+                "diffuse": {
+                    "type": 35666
+                },
+                "emission": {
+                    "type": 35666
+                },
+                "specular": {
+                    "type": 35666
+                },
+                "shininess": {
+                    "type": 5126
+                },
+                "transparency": {
+                    "type": 5126
+                },
+                "position": {
+                    "semantic": "POSITION",
+                    "type": 35665
+                },
+                "normal": {
+                    "semantic": "NORMAL",
+                    "type": 35665
+                },
+                "texcoord_0": {
+                    "semantic": "TEXCOORD_0",
+                    "type": 35664
+                }
+            },
+            "program": "program17",
+            "states": {
+                "enable": [
+                    2884,
+                    2929
+                ]
+            },
+            "uniforms": {
+                "u_modelViewMatrix": "modelViewMatrix",
+                "u_normalMatrix": "normalMatrix",
+                "u_projectionMatrix": "projectionMatrix",
+                "u_ambient": "ambient",
+                "u_diffuse": "diffuse",
+                "u_emission": "emission",
+                "u_specular": "specular",
+                "u_shininess": "shininess",
+                "u_transparency": "transparency"
+            }
+        }
+    }
+}

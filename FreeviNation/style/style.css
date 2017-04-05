@@ -1,0 +1,34 @@
+.site-index .panorama{
+    height: 600px;
+}
+
+body
+{
+	overflow			: hidden;
+	margin 				: 0px;
+	padding				: 0px;
+}
+
+#logo
+{
+	position: absolute;
+	width: 270px;
+	z-index: 1199;
+	top: 140px;
+	left: calc(50% - 135px);
+}
+
+#freevi
+{
+	width: 250px;
+	margin-right: 10px;
+	margin-left: 10px;
+	background: transparent;
+}
+
+#map 
+{
+	position 	: absolute; 
+	width 		: 100%;
+	height 		: 100%;  	
+}

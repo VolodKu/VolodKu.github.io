@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+
+      <div class="container" style="width:1170px; margin: 0 auto;">
+         <div class="row">
+           <div class="col s6" style="margin-top:15px;">
+        <button class="waves-effect waves-light btn" id="fm">Fill Mode</button>
+        <button class="waves-effect waves-light btn" id="fdm">FreeDrawing Mode</button>
+        <button class="waves-effect waves-light btn" id="export">Save to PNG </button>
+
+        </div>
+        <div class="col s1" style="margin-top:25px;"><input type="color" value="#26a69a" id="input_color"></div>
+        <div class="col s2" style="margin-top:3px;">
+          <form action="#">
+              <p class="range-field">
+                <input type="range" id="brushwidth" value="5" min="0" max="70" />
+              </p>
+            </form>
+        </div>
+        <div class="col s3" style="margin-top:15px;">
+          <select id="select-mode" class="browser-default">
+       <option value="vline">vLinePatternBrush</option>
+       <option value="hline">hLinePatternBrush</option>
+       <option value="square">squarePatternBrush</option>
+       <option value="diamond">diamondPatternBrush</option>
+       <option value="texture">texturePatternBrush</option>
+     </select>
+
+        </div>
+
+        <div class="col s12" id="canvasdiv">
+      <canvas id="c" width="1170" height="900"></canvas>
+      </div>
+    </div>
+      </div>
+
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript" src="js/fabric.js"></script>
+      <script type="text/javascript" src="js/app.js"></script>
+    </body>
+  </html>

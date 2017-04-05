@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	 	 <meta charset="UTF-8">
+	 	 <title>HTML5 Syntax and Coding Style</title>
+
+	 	 <link 	 rel="stylesheet" href="css/custom.css">
+
+	 	 <script src="js/jquery.js"></script>
+	 	 <script src="js/main.js"  ></script>
+
+	 	 <script src="js/jssor.slider-21.1.6.min.js" type="text/javascript"></script>
+
+	 	 <script type="text/javascript">
+			function pencil_change() 
+			{
+			    document.body.style.cursor='url(http://localhost:88/Working/HTML5_game/temp/asset/img/pencil_cursor.png)10 75, auto';
+			}
+		
+			function color_box_change()
+			{
+			    document.body.style.cursor='url(http://localhost:88/Working/HTML5_game/temp/asset/img/color_box_cursor.png)20 100, auto';
+			}
+		
+			function star_change()
+			{
+			    document.body.style.cursor='url(http://localhost:88/Working/HTML5_game/temp/asset/img/star.png)10 15, auto';
+			}
+		 
+			function eraser_change() 
+			{
+			    document.body.style.cursor='url(http://localhost:88/Working/HTML5_game/temp/asset/img/eraser_cursor.png)10 30, auto';
+			}
+			
+		 </script>
+
+ 		 <script type="text/javascript">
+	        jssor_1_slider_init = function() 
+	        {
+
+	            var jssor_1_options = 
+	            {              
+	              
+	              $SlideDuration: 150,
+	              $SlideWidth: 120,
+	              $SlideSpacing: 20,
+	              $Cols: 5,
+	              $ArrowNavigatorOptions: 
+	              {
+	                $Class: $JssorArrowNavigator$,
+	                $Steps: 1
+	              },
+	              $BulletNavigatorOptions: 
+	              {
+	                $Class: $JssorBulletNavigator$,
+	                $SpacingX: 1,
+	                $SpacingY: 1
+	              }
+	            };
+
+	            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+	            /*responsive code begin*/
+	            /*you can remove responsive code if you don't want the slider scales while window resizing*/
+	            function ScaleSlider() 
+	            {
+	                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+	                if (refSize) 
+	                {
+	                    refSize = Math.min(refSize, 355);
+	                    jssor_1_slider.$ScaleWidth(refSize);
+	                }
+	                else 
+	                {
+	                    window.setTimeout(ScaleSlider, 30);
+	                }
+	            }
+	            ScaleSlider();
+	            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+	            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+	            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+	            /*responsive code end*/
+	        };
+	    </script>
+	    <script type="text/javascript">
+	        jssor_2_slider_init = function() 
+	        {
+
+	            var jssor_2_options = 
+	            {              
+	              
+	              $SlideDuration: 150,
+	              $SlideWidth: 150,
+
+	              $SlideSpacing: 20,
+	              $Cols: 6,
+	              $ArrowNavigatorOptions: 
+	              {
+	                $Class: $JssorArrowNavigator$,
+	                $Steps: 1
+	              },
+	              $BulletNavigatorOptions: 
+	              {
+	                $Class: $JssorBulletNavigator$,
+	                $SpacingX: 1,
+	                $SpacingY: 1
+	              }
+	            };
+
+	            var jssor_2_slider = new $JssorSlider$("jssor_2", jssor_2_options);
+
+	            /*responsive code begin*/
+	            /*you can remove responsive code if you don't want the slider scales while window resizing*/
+	            function ScaleSlider() 
+	            {
+	                var refSize = jssor_2_slider.$Elmt.parentNode.clientWidth;
+	                if (refSize)
+	                {
+	                    refSize = Math.min(refSize, 623);
+	                    jssor_2_slider.$ScaleWidth(refSize);
+	                }
+	                else 
+	                {
+	                    window.setTimeout(ScaleSlider, 30);
+	                }
+	            }
+	            ScaleSlider();
+	            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+	            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+	            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+	            
+	            /*responsive code end*/
+	        };
+	    </script>
+	    <script type="text/javascript">
+	        jssor_3_slider_init = function() 
+	        {
+
+	            var jssor_3_options = 
+	            {              
+	              
+	              $SlideDuration: 150,
+	              $SlideWidth: 100,
+	              $SlideSpacing: 20,
+	              $Cols: 6,
+	              $ArrowNavigatorOptions: 
+	              {
+	                $Class: $JssorArrowNavigator$,
+	                $Steps: 1
+	              },
+	              $BulletNavigatorOptions: 
+	              {
+	                $Class: $JssorBulletNavigator$,
+	                $SpacingX: 1,
+	                $SpacingY: 1
+	              }
+	            };
+
+	            var jssor_3_slider = new $JssorSlider$("jssor_3", jssor_3_options);
+
+	            /*responsive code begin*/
+	            /*you can remove responsive code if you don't want the slider scales while window resizing*/
+	            function ScaleSlider() 
+	            {
+	                var refSize = jssor_3_slider.$Elmt.parentNode.clientWidth;
+	                if (refSize) 
+	                {
+	                    refSize = Math.min(refSize, 690);
+	                    jssor_3_slider.$ScaleWidth(refSize);
+	                }
+	                else 
+	                {
+	                    window.setTimeout(ScaleSlider, 30);
+	                }
+	            }
+	            ScaleSlider();
+	            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+	            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+	            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+	            /*responsive code end*/
+	        };
+	    </script>
+        <style>
+	        /* jssor slider bullet navigator skin 03 css */
+	        /*
+	        .jssorb03 div           (normal)
+	        .jssorb03 div:hover     (normal mouseover)
+	        .jssorb03 .av           (active)
+	        .jssorb03 .av:hover     (active mouseover)
+	        .jssorb03 .dn           (mousedown)
+	        */
+	        .jssorb03 
+	        {
+	            position: absolute;
+	        }
+	        .jssorb03 div, .jssorb03 div:hover, .jssorb03 .av 
+	        {
+	            position: absolute;
+	            /* size of bullet elment */
+	            width: 21px;
+	            height: 21px;
+	            text-align: center;
+	            line-height: 21px;
+	            color: white;
+	            font-size: 12px;
+	            overflow: hidden;
+	            cursor: pointer;
+	        }
+	        .jssorb03 div { background-position: -5px -4px; }
+	        .jssorb03 div:hover, .jssorb03 .av:hover { background-position: 0px 0px; }
+	        .jssorb03 .av { background-position: 0px -4px; }
+	        .jssorb03 .dn, .jssorb03 .dn:hover { background-position: 0px -4px; }
+
+	        /* jssor slider arrow navigator skin 03 css */
+	        /*
+	        .jssora03l                  (normal)
+	        .jssora03r                  (normal)
+	        .jssora03l:hover            (normal mouseover)
+	        .jssora03r:hover            (normal mouseover)
+	        .jssora03l.jssora03ldn      (mousedown)
+	        .jssora03r.jssora03rdn      (mousedown)
+	        .jssora03l.jssora03ldn      (disabled)
+	        .jssora03r.jssora03rdn      (disabled)
+	        */
+	        .jssora03l, .jssora03r 
+	        {
+	            display: block;
+	            position: absolute;
+	            /* size of arrow element */
+	            width: 25px;
+	            background: url('img/leftarrow.png') no-repeat;
+	            height: 62px;		           
+	        }
+	        .jssora03l { background-position: -3px -33px; }
+	        .jssora03r { background-position: -63px -33px; }
+	        .jssora03l:hover { background-position: -123px -33px; }
+	        .jssora03r:hover { background-position: -183px -33px; }
+	        .jssora03l.jssora03ldn { background-position: -243px -33px; }
+	        .jssora03r.jssora03rdn { background-position: -303px -33px; }
+	        .jssora03l.jssora03lds { background-position: -3px -33px; opacity: .3; pointer-events: none; }
+	        .jssora03r.jssora03rds { background-position: -63px -33px; opacity: .3; pointer-events: none; }
+	        .sidenav 
+	        {
+	        	height: 62px;
+	        	position: absolute;				    
+			    width: 0;			    
+			    z-index: 1;				    			    
+			    background-color: #ddd;
+			    border:2px;
+			    border-color: #eee;
+			    overflow-x: hidden;
+			    transition: 0.5s;
+			    padding-top: 10px;
+
+			}		
+			.sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;            
+            transition: 0.3s
+	        }
+
+	        .sidenav a:hover, .offcanvas a:focus{
+	            color: #f1f1f1;
+	        }
+
+	        .sidenav .closebtn {
+	            position: absolute;
+	            top: 0;
+	            right: 25px;
+	            font-size: 36px;
+	            margin-left: 50px;
+	        }
+
+	        @media screen and (max-height: 450px) {
+	          .sidenav {padding-top: 15px;}
+	          .sidenav a {font-size: 18px;}
+	        }
+
+			
+	        
+	    </style>
+
+	</head>
+
+	<body class="main">	
+		<div class="canvas_window" >
+			<canvas id="canvas" class="drawboard" ></canvas>
+			<div class="toolbar" style="height:73px">	
+				<div style="padding-right:15px;border-top:5px;height:50px">
+					<img id="save"  src="img/print.png" style="padding-right:20px; padding-top:10px; border-top:5px;width:50px"/>
+					<img id="save"  src="img/save.png"  style="padding-right:20px; padding-top:10px; border-top:5px;width:50px"/>
+					<img id="trash" src="img/trash.png" style="padding-right:10px; padding-top:10px; border-top:5px;width:50px"/>
+				</div>
+				<div style="margin-right:25px; background-color:#ddd; border-top:6px solid #eee;border-bottom:4px solid #eee; border-right:5px solid #eee; height: 63px ">
+					<img id="pencil"    onclick="pencil_change()"    src="img/pencil.png"    style="padding-top:10px; padding-left:10px; height:50px; width:50px"/>
+					<img id="color_box" onclick="color_box_change()" src="img/color_box.png" style="padding-top:10px; padding-left:10px;width:50px"/>
+					<img id="star"    onclick="star_change()"      src="img/star.png" 	 style="padding-bottom:5px;padding-left:10px;width:50px" />
+					<img id="eraser"    onclick="eraser_change()"    src="img/eraser.png"    style="padding-top:10px; padding-left:10px;padding-right:10px;width:50px"/>			
+				</div>								
+				<div id="jssor_1" style="background-color:#ddd; border-top:4px solid #eee;border-left:4px solid #eee; border-bottom:4px solid #eee; position: relative; margin: 0 auto;top: 0px; left: 0px; width: 810px; height: 150px; overflow: hidden; visibility: hidden;">
+				    <!-- Loading Screen -->
+				    <div data-u="slides" style="position: relative; top: 0px; left: 0px; width: 809px; height: 150px; overflow: hidden;">
+			            <div>
+			               <img id="rgb_255_0_255" data-u="blue_button" onclick="" src="img/rgb_255_0_255.png" style="padding-top:20px; width:120px;"/>
+			            </div>
+			            <div style="display: none;">
+			               <img  id="green" data-u="blue_button" onclick="" src="img/green.png"  style=" padding-top:20px;width:120px;" />
+			            </div>
+			            <div style="display: none;">
+			               <img  id="rgb_30_163_57" data-u="blue_button" onclick="" src="img/rgb_30_163_57.png"  style=" padding-top:20px;width:120px;" />
+			            </div>
+			            <div style="display: none;">
+			               <img  id="rgb_0_150_100" data-u="blue_button" onclick="" src="img/rgb_0_150_100.png"  style=" padding-top:20px;width:120px;" />
+			            </div>
+			            <div style="display: none;">
+			               <img  id="blue_button" data-u="blue_button" onclick="" src="img/blue.png"  style=" padding-top:20px; width:120px;" />
+			            </div>
+			            <div style="display: none;">
+			                <img  id="rgb_30_106_203" data-u="blue_button" onclick="" src="img/rgb_30_106_203.png"  style=" padding-top:20px;width:120px;" />
+			            </div>
+			            <div style="display: none;">
+			                <img  id="rgb_100_150_200" data-u="blue_button" onclick="" src="img/rgb_100_150_200.png"  style=" padding-top:20px;width:120px;" />
+			            </div>
+			            <div style="display: none;">
+			                <img  id="white" data-u="blue_button" onclick="" src="img/white.png"  style=" padding-top:20px;width:120px;" />
+			            </div>
+			            <div style="display: none;">
+			                <img  id="rgb_100_50_200" data-u="blue_button" onclick="" src="img/rgb_100_50_200.png"  style=" padding-top:20px;width:120px;" />
+			            </div>
+			            <div style="display: none;">
+			                <img  id="rgb_214_114_41" data-u="blue_button" onclick="" src="img/rgb_214_114_41.png"  style=" padding-top:20px;width:120px;" />
+			            </div>
+			            <div style="display: none;">
+			                <img  id="yellow" data-u="blue_button" onclick="" src="img/yellow_rgp_255_255_0.png"  style=" padding-top:20px;width:120px;" />
+			            </div>
+			            <div style="display: none;">
+			                <img  id="red" data-u="blue_button" onclick="" src="img/red.png"  style=" padding-top:20px;width:120px;" />
+			            </div>
+			            
+
+			        </div>
+			        
+			       
+			        <!-- Arrow Navigator -->
+			        <span data-u="arrowleft" class="jssora03l" style="top:0px;left:0px;width:50px;height:200px;" data-autocenter="2"><img data-u="image" id="leftarrow" src="img/leftarrow.png" style="background-color:#0000FF; width:50px;height:200px;" /></span>
+			        <span data-u="arrowright" class="jssora03r" style="top:0px;right:0px;width:50px;height:200px;" data-autocenter="2"><img data-u="image" id="rightarrow" src="img/rightarrow.png" style="background-color:#0000FF; width:50px;height:200px;" /></span>
+			    </div>
+			    <script type="text/javascript">jssor_1_slider_init();</script>
+				
+				
+				<div style=" background-color:#ddd; border-top:5px solid #eee;">					
+					<img id="bubble" onclick="openNav2()" src="img/bubble.png" style="height:64px; width:60px"/>					
+
+				</div>
+				<div id="mySidenav2" class=" sidenav " style="margin-left: 128px;  width: 627px; height: 86px; visibility: hidden;">
+					
+					<div id="jssor_2" style="background-color:#ddd; border-top:3px solid #eee;border-right:2px; border-left:4px solid #eee; border-bottom:3px solid #eee; position: absolute; margin: 0 auto;top: 0px; left: 0px; width: 809px; height: 86px; overflow: hidden; visibility: hidden;">
+				    <!-- Loading Screen -->
+					    <div data-u="slides" style="position: relative; top: 0px; left: 0px; width: 809px; height: 86px; ">
+				            <div>
+				            	<img data-u="image" src="img/005.jpg" style=""/>
+				            </div>
+				            <div style="display: none;">
+				               <img  data-u="image" onclick="" src="img/006.jpg"  style=" " />
+				            </div>
+				            <div style="display: none;">
+				               <img  data-u="image" onclick="" src="img/005.jpg"  style="" />
+				            </div>
+				            <div style="display: none;">
+				               <img  data-u="image" onclick="" src="img/011.jpg"  style=" " />
+				            </div>
+				            <div style="display: none;">
+				               <img data-u="image" onclick="" src="img/013.jpg"  style=" " />
+				            </div>
+				           
+				            <div style="display: none;">
+				                <img  data-u="image" onclick="" src="img/021.jpg"  style=" " />
+				            </div>
+				            <div style="display: none;">
+				                <img  data-u="image" onclick="" src="img/021.jpg"  style="" />
+				            </div>
+				            <div style="display: none;">
+				                <img  data-u="image" onclick="" src="img/022.jpg"  style=" " />
+				            </div>
+				            <div style="display: none;">
+				                <img  data-u="image" onclick="" src="img/024.jpg"  style=" " />
+				            </div>
+				            <div style="display: none;">
+				                <img  data-u="image" onclick="" src="img/025.jpg"  style=" " />
+				            </div>
+				            <div style="display: none;">
+				                <img  data-u="image" onclick="" src="img/027.jpg"  style=" " />
+				            </div>
+				            <div style="display: none;">
+				                <img  id="blue_button" onclick="" src="img/029.jpg"  style=" " />
+				            </div>      
+				            
+				            
+				        </div>
+				        <span data-u="arrowleft" class="jssora03l" style="top:0px;left:0px;width:25px;height:100px;" data-autocenter="2"><img data-u="image" id="leftarrow" src="img/leftarrow.png" style="background-color:#0000FF; width:25px;height:100px;" /></span>
+			        	<span data-u="arrowright" class="jssora03r" style="top:0px;right:0px;width:25px;height:100px;" data-autocenter="2"><img data-u="image" id="rightarrow" src="img/rightarrow.png" style="background-color:#0000FF; width:25px;height:100px;" /></span>
+				    </div>
+				    <script type="text/javascript">jssor_2_slider_init();</script>			  		 
+				</div>
+						
+
+				<div style=" background-color:#ddd; border-top:5px solid #eee;">
+					<img id="main_bubble" onclick="openNav1()" src="img/first_tooltip_head.png" style="border-right:5px solid #eee; height:64px; width:58px"/>
+				</div>
+				<div id="mySidenav1" class=" sidenav" style="margin-left: 65px; width: 690px; height:77px; visibility: hidden;">
+					<div id="jssor_3" style="background-color:#ddd; border-top:3px solid #eee;border-left:4px solid #eee;border-right:2px solid #eee; border-bottom:3px solid #eee; position: absolute; margin: 0 auto;top: 0px; left: 0px; width: 809px; height: 77px; overflow: hidden; visibility: hidden;">
+				    <!-- Loading Screen -->
+					    <div data-u="slides" style="position: relative; top: 0px; left: 0px; width: 809px; height: 77px; overflow: hidden;">
+					    	<div style="display: none;">
+							    <img  data-u="image" onclick="" src="img/bubble2.png"  style="padding-top:5px" />
+							</div>
+							<div style="display: none;">
+							    <img  data-u="image" onclick="" src="img/bubble3.png"  style="padding-top:5px" />
+							</div>
+							<div style="display: none;">
+							    <img  data-u="image" onclick="" src="img/bubble4.png"  style="padding-top:5px" />
+							</div>
+							<div style="display: none;">
+							    <img  data-u="image" onclick="" src="img/bubble5.png"  style="padding-top:5px" />
+							</div>
+							<div style="display: none;">
+							    <img  data-u="image" onclick="" src="img/bubble6.png"  style="padding-top:5px" />
+							</div>
+							<div style="display: none;">
+							    <img  data-u="image" onclick="" src="img/bubble7.png"  style="padding-top:5px" />
+							</div>
+							<div style="display: none;">
+							    <img  data-u="image" onclick="" src=""  style="padding-top:5px" />
+							</div>
+							<div style="display: none;">
+							    <img  data-u="image" onclick="" src=""  style="padding-top:5px" />
+							</div>		
+				        </div>
+				        <span data-u="arrowleft" class="jssora03l" style="top:0px;left:0px;width:25px;height:90px;" data-autocenter="2"><img data-u="image" id="leftarrow" src="img/leftarrow.png" style="background-color:#0000FF; width:25px;height:90px;" /></span>
+				    	<span data-u="arrowright" class="jssora03r" style="top:0px;right:0px;width:25px;height:90px;" data-autocenter="2"><img data-u="image" id="rightarrow" src="img/rightarrow.png" style="background-color:#0000FF; width:25px;height:90px;" /></span>
+				    </div>
+				    <script type="text/javascript">jssor_3_slider_init();</script>					 
+				</div>
+						
+			</div>
+		</div>
+		<script>
+			var flag1 = 0;
+			var flag2 = 0
+			function openNav1() {
+				if( flag1 == 1)
+				{
+					document.getElementById("mySidenav1").style.width = "690px";
+					flag1 = 0;
+				}
+				else
+				{
+					document.getElementById("mySidenav1").style.width = "0";
+					flag1 = 1;
+				}
+			    
+			}		
+			    
+			function openNav2() {
+				if(flag2 == 1)
+				{
+					document.getElementById("mySidenav2").style.width = "627px";
+					flag2 = 0;
+				}
+				else
+				{
+					document.getElementById("mySidenav2").style.width = "0";
+					flag2 = 1;
+				}
+			    
+			}
+		</script>
+	</body>
+</html>

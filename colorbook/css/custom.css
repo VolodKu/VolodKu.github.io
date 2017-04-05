@@ -1,0 +1,67 @@
+  .main
+{
+    background: #34C0D5;
+}
+
+.canvas_window
+{
+  position: absolute;
+  width   : 1000px;
+  height  : 600px;
+  background : #ffffff; 
+  border: 10px solid #953786;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;    
+  -webkit-box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+  -moz-box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+  box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+
+}
+
+
+.drawboard 
+{
+  width: 100%;
+  height: 100%;
+}
+
+.img:hover{
+   background-color: yellow;
+}
+
+
+
+.toolbar
+{
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 1000px;  
+  height: 70px;
+}
+
+.toolbar div 
+{
+  display:inline;
+  float:right;
+
+}
+
+
+
+.pencil 
+{ 
+    cursor:url(img/pencil_cursor.png),auto;
+}
+
+.color_box 
+{ 
+    cursor: url(imG/color_box.png);
+}
+
+
+
+

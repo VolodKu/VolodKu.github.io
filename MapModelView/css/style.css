@@ -1,0 +1,195 @@
+.site-index .panorama{
+    height: 600px;
+}
+
+body
+{
+	overflow: hidden;
+	margin : 0px;
+	padding: 0px;
+}
+
+#img_loading
+{
+	position: absolute;
+	z-index: 999;
+	top : 300px;
+	left : calc(50% - 50px);
+	opacity: 0.5;
+}
+
+#popup
+{
+	position: absolute;
+	width: 250px;
+	height: 90px;
+	line-height: 30px;
+	border: 1px solid gray;
+	padding: 2px;
+	box-shadow: 0px 0px 10px gray;
+	background-color: rgba(255, 255, 255, 0.75);
+	display: none;
+}
+
+#preview {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+#previewContent {
+	position: absolute;
+	top: 0px;
+	bottom: 0;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+
+#home_area
+{
+	position: absolute;
+	bottom: 10px;
+	left: calc(50% - 25px);
+	z-index: 99;
+	color:black;
+	width: 70px;
+	height: 70px;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 30px;
+	padding: 5px;
+	cursor: pointer;
+	box-shadow: 0px 0px 10px white;
+}
+
+#home_area img
+{
+	width : 100%;
+}
+
+#top_btn_area
+{
+	width 	: 410px;
+	position: absolute;
+	z-index: 99;
+	top 	: 70px;
+	left 	: calc(50% - 205px);
+}
+
+.abs_btn
+{
+	background 	: rgba(0, 0, 0, 0.75);
+	width: 200px;
+	/*height: 25px;*/
+	color: white;
+	box-shadow: 0px 0px 10px white;
+	line-height: 35px;
+	border: 1px solid white;
+	font-family: arial;
+	font-size: 25px;
+	cursor: pointer;
+}
+
+#logo
+{
+	position: absolute;
+	width: 270px;
+	z-index: 99;
+	top: 140px;
+	left: calc(50% - 135px);
+	display: none;
+}
+
+#freevi
+{
+	width: 250px;
+	margin-right: 10px;
+	margin-left: 10px;
+	background: transparent;
+}
+
+.abs_btn:first-child
+{
+	margin-right: 5px;
+}
+
+#buttonContainer {
+	position: absolute;
+	top: 5px;
+	left: 6px;
+	z-index: 99;
+}
+
+#cesiumContainer {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+#altContainer {
+	background-color: rgba(0, 0, 0, 0.2);
+	color: white;
+	padding: 0 2px;
+}
+
+#altContainer label {
+	line-height: 1em;
+}
+
+#previewContent:-webkit-full-screen {
+	top: 0;
+}
+
+#previewContent:-ms-fullscreen {
+	top: 0;
+}
+
+#previewContent:-moz-full-screen {
+	top: 0;
+}
+
+#previewContent:fullscreen {
+	top: 0;
+}
+
+#location
+{
+	position: absolute;
+	width: 120px;
+	height: 90px;
+	line-height: 30px;
+	border: 1px solid gray;
+	padding: 2px;
+	box-shadow: 0px 0px 10px gray;
+	background-color: rgba(255, 255, 255, 0.75);
+
+}
+
+#output
+{
+	display: none;
+}
+
+#btn_view
+{
+	position: absolute;
+	width: 200px;
+	height: 35px;
+	left: calc(50% - 100px);
+	top : 100px;
+}
+.cesium-viewer-animationContainer
+{
+	display: none;
+}
+
+.cesium-viewer-bottom
+{
+	display: none;
+}
