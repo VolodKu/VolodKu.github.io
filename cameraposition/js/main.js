@@ -5,6 +5,16 @@ var region  = null;
 
 var beforePosition  = null;
 
+var longitude   = -118.17793476415743;
+var latitude    = 34.346315465360576;
+var altitude    = 3000;
+var heading     = 175;
+var pitch       = -35;
+var roll        = 0.0
+var len_horizontal  = 20;
+var len_vertical    = 30;
+
+
 var viewer  = new Cesium.Viewer('cesiumContainer', {
             animation : false,
             homeButton : false,
@@ -25,121 +35,118 @@ var viewer  = new Cesium.Viewer('cesiumContainer', {
             sceneModePicker : false,
         });
 
+var camera  = new Cesium.Camera(viewer.scene);
+
 function getCameraFocusPosition() {
+    return getRayFocusPosition(camera.positionWC, camera.directionWC);
+}
+
+function getRayFocusPosition(origin, direction)
+{
     var rayScratch = new Cesium.Ray();
-    rayScratch.origin = viewer.camera.positionWC;
-    rayScratch.direction = viewer.camera.directionWC;
+    rayScratch.origin = origin;
+    rayScratch.direction = direction;
     var result = new Cesium.Cartesian3();
     result = viewer.scene.globe.pick(rayScratch, viewer.scene, result);
+
     return result;
 }
 
-// viewer.camera.moveEnd.addEventListener(function() 
-// {
-//     showCameraViewRegion();
-// });
+function getCameraVisibilityRegionPositions()
+{
+    var center  = getCameraFocusPosition();
+
+    if (center == undefined) return undefined;
+
+    var positions = [];
+
+    //left-down
+    camera.lookLeft(Cesium.Math.toRadians(len_horizontal / 2));
+    camera.lookDown(Cesium.Math.toRadians(len_vertical / 2));
+    positions.push(getCameraFocusPosition());
+
+    //left-up
+    camera.lookUp(Cesium.Math.toRadians(len_vertical));
+    positions.push(getCameraFocusPosition());
+
+    //right-up
+    camera.lookRight(Cesium.Math.toRadians(len_horizontal));
+    positions.push(getCameraFocusPosition());
+
+    //right-down
+    camera.lookDown(Cesium.Math.toRadians(len_vertical));
+    positions.push(getCameraFocusPosition());
+
+    return positions;
+}
+
 
 function showCameraViewRegion()
 {
-    var center = getCameraFocusPosition();
+    var positions   = getCameraVisibilityRegionPositions();
 
-    if (center == undefined) return;
+    if (positions == undefined) return;
 
     if (region != null)
     {
-        viewer.scene.primitives.remove(region);
+        viewer.scene.groundPrimitives.remove(region);
         // viewer.entities.remove(region);
     }
 
-    var circleInstance = new Cesium.GeometryInstance({
-        geometry : new Cesium.EllipseGeometry({
-            center : center,
-            semiMinorAxis : 1500.0,
-            semiMajorAxis : 1500.0,
-            rotation : Cesium.Math.PI_OVER_FOUR,
-            vertexFormat : Cesium.VertexFormat.POSITION_AND_ST
-        }),
-        id : 'region_camera',
-        attributes: {
-            color: Cesium.ColorGeometryInstanceAttribute.fromColor(new Cesium.Color(0, 0, 1, 0.7))
-        }
-    });
 
-    region = new Cesium.Primitive({
-        geometryInstances : circleInstance,
-        appearance : new Cesium.EllipsoidSurfaceAppearance({
-            material : new Cesium.Material({
-                fabric : {
-                    type : 'Color',
-                    uniforms : {
-                        color : new Cesium.Color(0, 0, 1, 0.7)
-                    }
-                }
-            })
+
+    var polygonHierarchy = { positions : positions };
+    var color = Cesium.Color.RED;
+
+    color = color.withAlpha(0.5);
+
+    region  = new Cesium.GroundPrimitive({
+        geometryInstances : new Cesium.GeometryInstance({
+            geometry : new Cesium.PolygonGeometry({
+                polygonHierarchy : polygonHierarchy
+            }),
+            attributes: {
+                color: Cesium.ColorGeometryInstanceAttribute.fromColor(color)
+            },
+            id : 'region'
         })
     });
-
-    // region = new Cesium.Entity(
-    // {
-    //     position : center,
-    //     id: 'man',
-    //     ellipse : {
-    //         semiMajorAxis : 1000.0,
-    //         semiMinorAxis : 1000.0,
-    //         material : Cesium.Color.AQUA,
-    //     },
-    // });
-
-    viewer.scene.primitives.add(region);
-    // viewer.entities.add(region);
+    
+    viewer.scene.groundPrimitives.add(region);
 
 }
 
 function fly(position)
 {
     viewer.camera.flyTo({
-        destination : Cesium.Cartesian3.fromDegrees(position.longitude, position.latitude, 5000.0),
+        destination : Cesium.Cartesian3.fromDegrees(position.longitude, position.latitude, position.altitude),
         orientation : {
-            heading : Cesium.Math.toRadians(175.0),
-            pitch : Cesium.Math.toRadians(-35.0),
-            roll : 0.0
+            heading : Cesium.Math.toRadians(heading),
+            pitch : Cesium.Math.toRadians(pitch),
+            roll : roll
         },
         complete    : function()
         {
-            viewer.clock.onTick.addEventListener(function(clock) {
-                if (beforePosition != null)
-                {
-                    if (Cesium.Cartesian3.distance(viewer.camera.positionWC, beforePosition) < 1000)
-                    {
-                        return;
-                    }
+            camera.position = Cesium.Cartesian3.fromDegrees(position.longitude, position.latitude, position.altitude);
+            camera.setView({
+                orientation: {
+                    heading : Cesium.Math.toRadians(heading),
+                    pitch : Cesium.Math.toRadians(pitch),
+                    roll : 0.0
                 }
-
-                beforePosition = viewer.camera.positionWC.clone();
-                showCameraViewRegion();
             });
+
+            showCameraViewRegion();
         }
     });
 }
 
 function main()
 {
-    jQuery.ajax
-    ({
-        url: "https://freegeoip.net/json",
-
-        jsonp: "callback",
-     
-        dataType: "jsonp",
-     
-        success: function( response ) 
-        {
-            fly(response);
-        },
-        error: function(error)
-        {
-            isLocationEnabled = false
-        }
-    });
+    fly({
+        longitude : longitude,
+        latitude  : latitude,
+        altitude : altitude
+    })
 }
 
