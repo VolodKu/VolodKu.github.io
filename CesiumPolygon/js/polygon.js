@@ -153,6 +153,7 @@ var Polygon 	= function()
 	{
 		orgColor 		= org;
 		highlightColor 	= highlight;
+		currentColor 	= org;
 	}
 
 	main.setPolygon 	= function(color)
