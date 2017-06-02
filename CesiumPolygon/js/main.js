@@ -196,7 +196,7 @@ function clickAction(click)
         polygon     = new Polygon();
 
         polygon.init(viewer);
-        polygon.setHighLightColor(Cesium.Color.WHITE.withAlpha(0.01), Cesium.Color.BLUE.withAlpha(0.4));
+        polygon.setHighLightColor(Cesium.Color.BLUE.withAlpha(0.4));
     }
     if (editMode == 0)
     {

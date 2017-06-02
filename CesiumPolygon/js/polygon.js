@@ -8,16 +8,22 @@ var Polygon 	= function()
 
 	main.polygon 	= null;
 	main.polylines 	= null;
-	main.color 		= 0xFF0000;
+	main.color 		= 0xCE2533;
 	main.opacity 	= 0.01;
 	main.isHighLight 		= false;
 
-	var orgColor, highlightColor, currentColor;
+	var orgColor, highlightColor, currentColor, outlineColor;
 	var limitDistance 	= 10;
 
 	main.init 			= function(viewer)
 	{
 		main.viewer 	= viewer;
+
+		var rgb 	= main.color;
+
+		orgColor 	= Cesium.Color.fromBytes(Math.floor(rgb / 0x10000), Math.floor((rgb % 0x10000) / 0x100), Math.floor((rgb % 0x10000) % 0x100), Math.floor(main.opacity * 0xFF));
+		outlineColor = Cesium.Color.fromBytes(Math.floor(rgb / 0x10000), Math.floor((rgb % 0x10000) / 0x100), Math.floor((rgb % 0x10000) % 0x100), 0xFF);
+		currentColor = orgColor;
 	}
 
 	main.pickPosition 	= function(click)
@@ -58,7 +64,7 @@ var Polygon 	= function()
 		{
 			main.polylines = main.viewer.scene.primitives.add(new Cesium.PolylineCollection());
 		}
-
+		
 		main.polylines.removeAll();
 
 		for (var index = 1; index < main.points.length / 2; index ++)
@@ -70,7 +76,7 @@ var Polygon 	= function()
 		        ],
 		        width : 3.0,
 		        material : Cesium.Material.fromType(Cesium.Material.ColorType, {
-		        	color : Cesium.Color.RED
+		        	color : outlineColor
 		        })
 			});	
 
@@ -83,7 +89,7 @@ var Polygon 	= function()
 			        ],
 			        width : 3.0,
 			        material : Cesium.Material.fromType(Cesium.Material.ColorType, {
-			        	color : Cesium.Color.RED
+			        	color : outlineColor
 			        })
 				});	
 				main.polylines.add({
@@ -93,7 +99,7 @@ var Polygon 	= function()
 			        ],
 			        width : 3.0,
 			        material : Cesium.Material.fromType(Cesium.Material.ColorType, {
-			        	color : Cesium.Color.RED
+			        	color : outlineColor
 			        })
 				});	
 			}
@@ -108,7 +114,7 @@ var Polygon 	= function()
 		        ],
 		        width : 3.0,
 		        material : Cesium.Material.fromType(Cesium.Material.ColorType, {
-		        	color : Cesium.Color.RED
+		        	color : outlineColor
 		        })
 			});
 
@@ -121,7 +127,7 @@ var Polygon 	= function()
 			        ],
 			        width : 3.0,
 			        material : Cesium.Material.fromType(Cesium.Material.ColorType, {
-			        	color : Cesium.Color.RED
+			        	color : outlineColor
 			        })
 				});
 				main.polylines.add({
@@ -131,7 +137,7 @@ var Polygon 	= function()
 			        ],
 			        width : 3.0,
 			        material : Cesium.Material.fromType(Cesium.Material.ColorType, {
-			        	color : Cesium.Color.RED
+			        	color : outlineColor
 			        })
 				});	
 			}
@@ -151,11 +157,9 @@ var Polygon 	= function()
 		}
 	}
 
-	main.setHighLightColor 		= function(org, highlight)
+	main.setHighLightColor 		= function(highlight)
 	{
-		orgColor 		= org;
 		highlightColor 	= highlight;
-		currentColor 	= org;
 	}
 
 	main.setPolygon 	= function(color)
@@ -236,8 +240,10 @@ var Polygon 	= function()
 
 		var rgb 	= main.color;
 		orgColor 	= Cesium.Color.fromBytes(Math.floor(rgb / 0x10000), Math.floor((rgb % 0x10000) / 0x100), Math.floor((rgb % 0x10000) % 0x100), Math.floor(main.opacity * 0xFF));
+		outlineColor = Cesium.Color.fromBytes(Math.floor(rgb / 0x10000), Math.floor((rgb % 0x10000) / 0x100), Math.floor((rgb % 0x10000) % 0x100), 0xFF);
 		currentColor = orgColor;
 
+		main.drawOutLine();
 		main.setPolygon(currentColor);
 	}
 
@@ -248,8 +254,10 @@ var Polygon 	= function()
 		var rgb 	= main.color;
 
 		orgColor 	= Cesium.Color.fromBytes(Math.floor(rgb / 0x10000), Math.floor((rgb % 0x10000) / 0x100), Math.floor((rgb % 0x10000) % 0x100), Math.floor(main.opacity * 0xFF));
+		outlineColor = Cesium.Color.fromBytes(Math.floor(rgb / 0x10000), Math.floor((rgb % 0x10000) / 0x100), Math.floor((rgb % 0x10000) % 0x100), 0xFF);
 		currentColor = orgColor;	
 		
+		main.drawOutLine();
 		main.setPolygon(currentColor);
 	}
 
@@ -262,6 +270,7 @@ var Polygon 	= function()
 		arr["opacity"] = main.opacity;
 
 		var json 	= JSON.stringify(Object.assign({}, arr));
+		return json;
 	}
 
 	main.loadPolygon 	= function(json)
@@ -279,6 +288,7 @@ var Polygon 	= function()
 		var rgb 	= main.color;
 
 		orgColor 	= Cesium.Color.fromBytes(Math.floor(rgb / 0x10000), Math.floor((rgb % 0x10000) / 0x100), Math.floor((rgb % 0x10000) % 0x100), Math.floor(main.opacity * 0xFF));
+		outlineColor = Cesium.Color.fromBytes(Math.floor(rgb / 0x10000), Math.floor((rgb % 0x10000) / 0x100), Math.floor((rgb % 0x10000) % 0x100), 0xFF);
 		currentColor = orgColor;
 
 		main.drawOutLine();
