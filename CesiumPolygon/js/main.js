@@ -126,7 +126,8 @@ function initToolBar()
     $('#height_value').on('input', function() 
     {
         var height  = parseInt(document.getElementById('height_value').value);
-        if (height == undefined) height = 0;
+        console.log(height);
+        if (height == undefined || isNaN(height)) height = 0;
         
         if (polygon != undefined) polygon.setHeight(height);
     });
