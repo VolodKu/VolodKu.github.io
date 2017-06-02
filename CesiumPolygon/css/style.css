@@ -96,6 +96,20 @@ body
     width: 70px;
 }
 
+#colorPanel
+{
+	position: absolute;
+    width: 150px;
+    margin-top: 100px;
+    margin-left : 20px;
+}
+
+.panel
+{
+	width: 100px;
+	margin-top: 5px;
+}
+
 #previewContent:-webkit-full-screen {
 	top: 0;
 }

@@ -8,6 +8,8 @@ var Polygon 	= function()
 
 	main.polygon 	= null;
 	main.polylines 	= null;
+	main.color 		= 0xFF0000;
+	main.opacity 	= 0.01;
 	main.isHighLight 		= false;
 
 	var orgColor, highlightColor, currentColor;
@@ -226,5 +228,61 @@ var Polygon 	= function()
 		main.height 	= height;
 		main.drawOutLine();
 		main.setPolygon(currentColor);
+	}
+
+	main.setColor 		= function(color)
+	{
+		main.color 	= color;
+
+		var rgb 	= main.color;
+		orgColor 	= Cesium.Color.fromBytes(Math.floor(rgb / 0x10000), Math.floor((rgb % 0x10000) / 0x100), Math.floor((rgb % 0x10000) % 0x100), Math.floor(main.opacity * 0xFF));
+		currentColor = orgColor;
+
+		main.setPolygon(currentColor);
+	}
+
+	main.setOpacity		= function(opacity)
+	{
+		main.opacity 	= opacity;
+
+		var rgb 	= main.color;
+
+		orgColor 	= Cesium.Color.fromBytes(Math.floor(rgb / 0x10000), Math.floor((rgb % 0x10000) / 0x100), Math.floor((rgb % 0x10000) % 0x100), Math.floor(main.opacity * 0xFF));
+		currentColor = orgColor;	
+		
+		main.setPolygon(currentColor);
+	}
+
+	main.savePolygon 	= function()
+	{
+		var arr 	= new Array();
+		arr["locations"] = main.points;
+		arr["height"] 	= main.height;
+		arr["color"] = main.color;
+		arr["opacity"] = main.opacity;
+
+		var json 	= JSON.stringify(Object.assign({}, arr));
+	}
+
+	main.loadPolygon 	= function(json)
+	{
+		main.reset();
+		var points 	= json['locations'];
+		for (var i = 0; i < points.length; i ++)
+		{
+			main.points.push(points[i]);
+		}
+		main.height 	= json['height'];
+		main.color 		= json['color'];
+		main.opacity 	= json['opacity'];
+
+		var rgb 	= main.color;
+
+		orgColor 	= Cesium.Color.fromBytes(Math.floor(rgb / 0x10000), Math.floor((rgb % 0x10000) / 0x100), Math.floor((rgb % 0x10000) % 0x100), Math.floor(main.opacity * 0xFF));
+		currentColor = orgColor;
+
+		main.drawOutLine();
+		main.setPolygon(currentColor);
+
 	}
 }

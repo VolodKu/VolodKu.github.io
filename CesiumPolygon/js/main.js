@@ -118,7 +118,20 @@ function initToolBar()
         editMode    = 0;
         document.body.style.cursor  = 'crosshair';
 
-        polygon.reset();
+        if (polygon != undefined)
+        {
+            polygon.reset();
+            
+            //savetest
+            // polygon.savePolygon();
+
+            //loadtest
+            // $.getJSON("./obj/demo.json", function (json) 
+            // {
+            //     polygon.loadPolygon(json);
+            // });
+        }
+
         resetControl();
         $('#area').addClass('sel');
     });
@@ -126,10 +139,23 @@ function initToolBar()
     $('#height_value').on('input', function() 
     {
         var height  = parseInt(document.getElementById('height_value').value);
-        console.log(height);
         if (height == undefined || isNaN(height)) height = 0;
         
         if (polygon != undefined) polygon.setHeight(height);
+    });
+
+    $('#color_value').on('input', function() 
+    {
+        var color  = parseInt(document.getElementById('color_value').value, 16);
+        if (color == undefined || isNaN(color)) color = 0;
+        if (polygon != undefined) polygon.setColor(color);
+    });
+
+    $('#opacity_value').on('input', function() 
+    {
+        var opacity  = parseFloat(document.getElementById('opacity_value').value);
+        if (opacity == undefined || isNaN(opacity) || opacity < 0.01) opacity = 0.01;
+        if (polygon != undefined) polygon.setOpacity(opacity);
     });
 
 }
