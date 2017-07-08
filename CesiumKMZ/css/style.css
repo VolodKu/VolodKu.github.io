@@ -1,0 +1,293 @@
+.site-index .panorama{
+    height: 600px;
+}
+
+body
+{
+	overflow: hidden;
+	margin : 0px;
+	padding: 0px;
+}
+
+#preview {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+#previewContent {
+	position: absolute;
+	top: 0px;
+	bottom: 0;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+#control_btn
+{
+	position: absolute;
+    right: 100px;
+    top: 10px;
+}
+
+#text_label
+{
+	position: absolute;
+	display: none;
+}
+
+#label_value
+{
+	background: wheat;
+    color: red;
+    padding: 3px;
+    font-size: 20px;
+}
+
+#next_button
+{
+	display: none;
+	cursor: pointer;
+}
+
+#edit_button
+{
+	display: none;
+	cursor: pointer;
+}
+
+#toolbar 
+{ 
+	margin		: 15px;
+    padding 	: 2px 5px;
+    position 	: absolute;
+}
+
+#color
+{
+	background-image: url("../images/color.png");
+	background-size: cover;
+}
+
+#color.sel
+{
+	background-image: url("../images/color_select.png");
+	background-size: cover;
+}
+
+#area
+{
+	background-image: url("../images/area.png");
+	background-size: cover;
+}
+
+#area.sel
+{
+	background-image: url("../images/area_select.png");
+	background-size: cover;
+}
+
+#height
+{
+	background-image: url("../images/height.png");
+	background-size: cover;
+}
+
+#height.sel
+{
+	background-image: url("../images/height_select.png");
+	background-size: cover;
+}
+
+#delete
+{
+	background-image: url("../images/eraser.png");
+	background-size: cover;
+}
+
+#delete.sel
+{
+	background-image: url("../images/eraser_select.png");
+	background-size: cover;
+}
+
+#level
+{
+	background-image: url("../images/level.png");
+	background-size: cover;
+}
+
+#level.sel
+{
+	background-image: url("../images/level_select.png");
+	background-size: cover;
+}
+
+#view
+{
+	background-image: url("../images/view.png");
+	background-size: cover;
+}
+
+#view.sel
+{
+	background-image: url("../images/view_select.png");
+	background-size: cover;
+}
+
+#annotation
+{
+	background-image: url("../images/annotation.png");
+	background-size: cover;
+}
+
+#annotation.sel
+{
+	background-image: url("../images/annotation_select.png");
+	background-size: cover;
+}
+
+#reset_level
+{
+	background-image: url(../images/eraser.png);
+    background-size: cover;
+    width: 32px;
+    height: 32px;
+    margin-top: 10px;
+    margin-left: 0px;
+}
+
+.tool
+{
+	width: 48px;
+	height: 48px;
+	float: left;
+	margin-right: 10px;
+	background-color: rgba(80, 80, 80, 0.9);
+	cursor: pointer;
+}
+
+#inputHeight
+{
+	position: absolute;
+    margin-top: 70px;
+    margin-left: 195px;
+    display: none;
+}
+
+#height_value
+{
+	font-size: 15px;
+    width: 70px;
+}
+
+#colorPanel
+{
+	position: absolute;
+    width: 150px;
+    margin-top: 70px;
+    margin-left: 75px;
+    display: none;
+}
+
+#levelPanel
+{
+	position: absolute;
+    width: 140px;
+    margin-top: 70px;
+    margin-left: 310px;
+    display: none;
+}
+
+.panel
+{
+	width: 100px;
+	margin-top: 5px;
+}
+
+#text_change
+{
+	width: 160px;
+    position: absolute;
+    background: wheat;
+    padding: 10px;
+    display: none;
+}
+
+#cancel_button
+{
+	margin-top: 10px;
+    margin-left: 20px;
+}
+
+#text_create
+{
+	width: 160px;
+    position: absolute;
+    background: wheat;
+    padding: 10px;
+    display: none;
+}
+
+#delete_button
+{
+	margin-top: 10px;
+    margin-left: 20px;
+}
+
+#previewContent:-webkit-full-screen {
+	top: 0;
+}
+
+#previewContent:-ms-fullscreen {
+	top: 0;
+}
+
+#previewContent:-moz-full-screen {
+	top: 0;
+}
+
+#previewContent:fullscreen {
+	top: 0;
+}
+
+#location
+{
+	position: absolute;
+	width: 120px;
+	height: 90px;
+	line-height: 30px;
+	border: 1px solid gray;
+	padding: 2px;
+	box-shadow: 0px 0px 10px gray;
+	background-color: rgba(255, 255, 255, 0.75);
+
+}
+
+#output
+{
+	display: none;
+}
+
+#btn_view
+{
+	position: absolute;
+	width: 200px;
+	height: 35px;
+	left: calc(50% - 100px);
+	top : 100px;
+}
+.cesium-viewer-animationContainer
+{
+	display: none;
+}
+
+.cesium-viewer-bottom
+{
+	display: none;
+}

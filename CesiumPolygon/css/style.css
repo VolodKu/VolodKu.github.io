@@ -36,6 +36,18 @@ body
     position 	: absolute;
 }
 
+#color
+{
+	background-image: url("../images/color.png");
+	background-size: cover;
+}
+
+#color.sel
+{
+	background-image: url("../images/color_select.png");
+	background-size: cover;
+}
+
 #area
 {
 	background-image: url("../images/area.png");
@@ -72,6 +84,52 @@ body
 	background-size: cover;
 }
 
+#level
+{
+	background-image: url("../images/level.png");
+	background-size: cover;
+}
+
+#level.sel
+{
+	background-image: url("../images/level_select.png");
+	background-size: cover;
+}
+
+#view
+{
+	background-image: url("../images/view.png");
+	background-size: cover;
+}
+
+#view.sel
+{
+	background-image: url("../images/view_select.png");
+	background-size: cover;
+}
+
+#annotation
+{
+	background-image: url("../images/annotation.png");
+	background-size: cover;
+}
+
+#annotation.sel
+{
+	background-image: url("../images/annotation_select.png");
+	background-size: cover;
+}
+
+#reset_level
+{
+	background-image: url(../images/eraser.png);
+    background-size: cover;
+    width: 32px;
+    height: 32px;
+    margin-top: 10px;
+    margin-left: 0px;
+}
+
 .tool
 {
 	width: 48px;
@@ -86,7 +144,7 @@ body
 {
 	position: absolute;
     margin-top: 70px;
-    margin-left: 75px;
+    margin-left: 195px;
     display: none;
 }
 
@@ -100,14 +158,54 @@ body
 {
 	position: absolute;
     width: 150px;
-    margin-top: 100px;
-    margin-left : 20px;
+    margin-top: 70px;
+    margin-left: 75px;
+    display: none;
+}
+
+#levelPanel
+{
+	position: absolute;
+    width: 140px;
+    margin-top: 70px;
+    margin-left: 310px;
+    display: none;
 }
 
 .panel
 {
 	width: 100px;
 	margin-top: 5px;
+}
+
+#text_change
+{
+	width: 160px;
+    position: absolute;
+    background: wheat;
+    padding: 10px;
+    display: none;
+}
+
+#cancel_button
+{
+	margin-top: 10px;
+    margin-left: 20px;
+}
+
+#text_create
+{
+	width: 160px;
+    position: absolute;
+    background: wheat;
+    padding: 10px;
+    display: none;
+}
+
+#delete_button
+{
+	margin-top: 10px;
+    margin-left: 20px;
 }
 
 #previewContent:-webkit-full-screen {

@@ -12,7 +12,6 @@
     <script type="text/javascript" src="js/lib/jquery.min.js"></script>
     <script type="text/javascript" src="js/lib/hammer.min.js"></script>
     <script src="js/Cesium/Cesium.js"></script>
-    <script type="text/javascript" src="js/Cesium/Sandcastle-header.js"></script>
     <script src="js/touch.js"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <style>
@@ -33,9 +32,13 @@
             <div id="cesiumContainer"></div>
         </div>
         <div id="toolbar">
+            <div id="view" class="tool"></div>
+            <div id="color" class="tool"></div>
             <div id="area" class="tool sel"></div>
             <div id="height" class="tool"></div>
             <div id="delete" class="tool"></div>
+            <div id="level" class="tool"></div>
+            <div id="annotation" class="tool"></div>
         </div>
 
         <div id="colorPanel">
@@ -44,8 +47,30 @@
             <input type="text" id="opacity_value" class="panel" placeholder="1.0" required />
         </div>
 
+        <div id="levelPanel">
+            <label for="title" style="color: wheat;">Base Height</label>
+            <input type="text" id="base_value" class="panel" placeholder="0.0" required />
+            <label for="title" style="color: wheat;">Ceiling Height</label>
+            <input type="text" id="ceiling_value" class="panel" placeholder="0.0" required />
+            <label for="title" style="color: wheat;">Level Count</label>
+            <input type="text" id="level_value" class="panel" placeholder="0" required />
+            <div id="reset_level" class="tool"></div>
+        </div>
+
         <div id="inputHeight">
             <input type="text" id="height_value" placeholder="Height" required />
+        </div>
+
+        <div id="text_create">
+            <input type="text" id="text_create_value" placeholder="Text" required />
+            <button type="button" id="cancel_button">Cancel</button>
+            <button type="button" id="save_button">Save</button>
+        </div>
+
+        <div id="text_change">
+            <input type="text" id="text_value" placeholder="Text" required />
+            <button type="button" id="delete_button">Delete</button>
+            <button type="button" id="update_button">Update</button>
         </div>
     </div>
 
