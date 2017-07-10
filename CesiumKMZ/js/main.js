@@ -16,13 +16,10 @@ var editMode    = 0;
 var loader      = null;
 
 var viewer  = new Cesium.Viewer('cesiumContainer', {
-            animation : false,
             homeButton : false,
             creditContainer : null,
             navigationHelpButton : false,
             navigationInstructionsInitiallyVisible: false,
-            timeline : false,
-            clock : null,
             selectionIndicator:false,
             fullscreenElement: 'previewContent',
             baseLayerPicker: true,
@@ -31,7 +28,7 @@ var viewer  = new Cesium.Viewer('cesiumContainer', {
             //     requestWaterMask : true,
             //     requestVertexNormals : true
             // }),
-            infoBox : false,
+            infoBox : true,
             sceneModePicker : false,
         });
 

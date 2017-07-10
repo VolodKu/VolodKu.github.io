@@ -282,10 +282,6 @@ body
 	left: calc(50% - 100px);
 	top : 100px;
 }
-.cesium-viewer-animationContainer
-{
-	display: none;
-}
 
 .cesium-viewer-bottom
 {
