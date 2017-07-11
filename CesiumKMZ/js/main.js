@@ -15,14 +15,18 @@ var editMode    = 0;
 
 var loader      = null;
 
+var folderMapEntities   = new Map();
+
+var screenOverlay   = "";
+
 var viewer  = new Cesium.Viewer('cesiumContainer', {
             homeButton : false,
             creditContainer : null,
             navigationHelpButton : false,
             navigationInstructionsInitiallyVisible: false,
-            selectionIndicator:false,
+            selectionIndicator:true,
             fullscreenElement: 'previewContent',
-            baseLayerPicker: true,
+            baseLayerPicker: false,
             // terrainProvider : new Cesium.CesiumTerrainProvider({
             //     url : 'https://assets.agi.com/stk-terrain/v1/tilesets/PAMAP/tiles',
             //     requestWaterMask : true,
@@ -45,6 +49,12 @@ function getRayFocusPosition(origin, direction)
     result = viewer.scene.globe.pick(rayScratch, viewer.scene, result);
 
     return result;
+}
+
+function setScreenOverlay(name, url)
+{
+    screenOverlay = name;
+    $("#screenoverlay").attr("src",url);
 }
 
 function fly(position)

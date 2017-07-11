@@ -31,9 +31,27 @@ var KMZLoader 	= function()
 	        	} 
 	        }).then (function () 
 	        {
+	        	main.processEntities();
 	        	viewer.clock.multiplier = 250;
                 viewer.clock.shouldAnimate = true;
 	        });
 	    });
+	}
+
+	main.processEntities	= function()
+	{
+		var entity 	= folderMapEntities.get("Base Stations");
+		var cartographicPosition 	= Cesium.Ellipsoid.WGS84.cartesianToCartographic(entity[0].position._value);
+		var height = cartographicPosition.height;
+		
+		for ([key, value] of folderMapEntities)
+		{
+			for (var i = 0; i < value.length; i ++)
+			{
+				entity = value[i];
+				cartographicPosition 	= Cesium.Ellipsoid.WGS84.cartesianToCartographic(entity.position._value);
+				entity.position._value = Cesium.Cartesian3.fromRadians(cartographicPosition.longitude, cartographicPosition.latitude, cartographicPosition.height - height);
+			}
+		}
 	}
 }

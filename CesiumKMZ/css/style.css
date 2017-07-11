@@ -9,6 +9,14 @@ body
 	padding: 0px;
 }
 
+#screenoverlay
+{
+	position: absolute;
+    bottom: 135px;
+    width: 250px;
+    left: 20px;
+}
+
 #preview {
 	position: absolute;
 	width: 100%;
