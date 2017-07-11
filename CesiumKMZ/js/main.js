@@ -54,7 +54,7 @@ function getRayFocusPosition(origin, direction)
 function setScreenOverlay(name, url)
 {
     screenOverlay = name;
-    $("#screenoverlay").attr("src",url);
+    // $("#screenoverlay").attr("src",url);
 }
 
 function fly(position)
@@ -83,6 +83,17 @@ function main()
     //     pitch   : pitch,
     //     roll    : roll
     // });
+
+    $('#screen_overlay').on('change', function(){
+        if(this.checked) 
+        {
+            $('#screenoverlay').fadeIn(500);
+        }
+        else
+        {
+            $('#screenoverlay').fadeOut(500);
+        }   
+    })
 
     initLoaderKMZ();
 }
