@@ -1,0 +1,55 @@
+.site-index .panorama{
+    height: 600px;
+}
+
+body
+{
+	overflow: hidden;
+	margin : 0px;
+	padding: 0px;
+}
+
+#preview {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+#previewContent {
+	position: absolute;
+	top: 0px;
+	bottom: 0;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+#previewContent:-webkit-full-screen {
+	top: 0;
+}
+
+#previewContent:-ms-fullscreen {
+	top: 0;
+}
+
+#previewContent:-moz-full-screen {
+	top: 0;
+}
+
+#previewContent:fullscreen {
+	top: 0;
+}
+
+.cesium-viewer-animationContainer
+{
+	display: none;
+}
+
+.cesium-viewer-bottom
+{
+	display: none;
+}
