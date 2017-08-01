@@ -53,3 +53,13 @@ body
 {
 	display: none;
 }
+
+.cesium-viewer-toolbar
+{
+	display: none;
+}
+
+.cesium-widget-credits
+{
+	display: none;
+}
