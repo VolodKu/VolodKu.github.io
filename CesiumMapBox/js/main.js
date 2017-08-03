@@ -79,6 +79,11 @@ function main()
     });
 }
 
+function getColor(colorName, alpha) {
+    var color = Cesium.Color[colorName.toUpperCase()];
+    return Cesium.Color.fromAlpha(color, parseFloat(alpha));
+}
+
 function loadModel()
 {
     var position = Cesium.Cartesian3.fromDegrees(longitude, latitude);
@@ -92,9 +97,11 @@ function loadModel()
         model : {
             uri : './obj/BLD3.gltf',
             minimumPixelSize : 1,
-            maximumScale : 1
+            maximumScale : 1,
+            color : getColor('White', 0.5)
         }
     });
+    console.log(entity);
     viewer.trackedEntity = entity;
 }
 
