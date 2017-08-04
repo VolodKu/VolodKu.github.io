@@ -87,7 +87,7 @@ function getColor(colorName, alpha) {
 function loadModel()
 {
     var position = Cesium.Cartesian3.fromDegrees(longitude, latitude);
-    var hpr = new Cesium.HeadingPitchRoll(0, 0, - Math.PI / 2);
+    var hpr = new Cesium.HeadingPitchRoll(0, 0, 0);
     var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
 
     var entity = viewer.entities.add({
