@@ -3,7 +3,16 @@ var KMZLoader 	= function()
 {
 	var main 		= this;
 	main.options 	= null;
+
+	var load 	= false;
 	
+	var kmlDataSrc 	= null;
+	var polyline 	= null;
+	var polygons 	= [];
+
+	var camera 		= null;
+
+	var angle 		= 10;
 
 	main.init 			= function(viewer)
 	{
@@ -11,30 +20,40 @@ var KMZLoader 	= function()
 		    camera : viewer.scene.camera,
 		    canvas : viewer.scene.canvas
 		};
+
+		camera  = new Cesium.Camera(viewer.scene);
 	}
 
 	main.loadKMZ 		= function(path)
 	{
-		var dataSource  = new Cesium.KmlDataSource(main.options);
+		kmlDataSrc  = new Cesium.KmlDataSource(main.options);
 
-	    dataSource.load(path);
+	    kmlDataSrc.load(path);
 	    // dataSource._clampToGround = true;
 	    viewer.clock.shouldAnimate = false;
-	    viewer.dataSources.add(dataSource).then(function(dataSource) 
+	    viewer.dataSources.add(kmlDataSrc).then(function(dataSource) 
 	    {
 	        viewer.flyTo(dataSource, { 
 	        	duration: 4.0, 
 	        	offset: { 
-	        		heading: heading, 
+	        		heading: 0, 
 	        		pitch: pitch, 
 	        		range: 1000 
 	        	} 
 	        }).then (function () 
 	        {
-	        	main.processEntities();
-	        	$('#title').text(dataSource._name);
-	        	viewer.clock.multiplier = 250;
-                viewer.clock.shouldAnimate = true;
+	        	viewer.scene.globe.tileLoadProgressEvent.addEventListener(function(progress)
+	            {
+	                if (progress == 0 && load == false)
+	                {
+	                    main.processEntities();
+			        	$('#title').text(dataSource._name);
+			        	viewer.clock.multiplier = 250;
+		                viewer.clock.shouldAnimate = true;
+	                    load = true;
+	                }
+	            });
+	        	
 	        });
 	    });
 	}
@@ -44,22 +63,27 @@ var KMZLoader 	= function()
 		var entity 	= folderMapEntities.get("Base Stations");
 		var cartographicPosition 	= Cesium.Ellipsoid.WGS84.cartesianToCartographic(entity[0].position._value);
 		var height = cartographicPosition.height;
-		
-		var index = 1;
-		for ([key, value] of folderMapEntities)
-		{
-			main.addToggleUI(document.getElementById('toolbox'), 'toolbox_' + index, key, index);
-			index ++;
-			for (var i = 0; i < value.length; i ++)
-			{
-				entity = value[i];
-				cartographicPosition 	= Cesium.Ellipsoid.WGS84.cartesianToCartographic(entity.position._value);
-				entity.position._value = Cesium.Cartesian3.fromRadians(cartographicPosition.longitude, cartographicPosition.latitude, cartographicPosition.height - height);
-			}
-		}
 
-		$('#toolbox').fadeIn(500);
-		$('#screenoverlay').fadeIn(500);
+		getGroundHeight(cartographicPosition, function(cartoPosition) 
+	    {
+	        var deltaHeight = height - cartoPosition[0].height;
+
+	        var index = 1;
+			for ([key, value] of folderMapEntities)
+			{
+				main.addToggleUI(document.getElementById('toolbox'), 'toolbox_' + index, key, index);
+				index ++;
+				for (var i = 0; i < value.length; i ++)
+				{
+					entity = value[i];
+					cartographicPosition 	= Cesium.Ellipsoid.WGS84.cartesianToCartographic(entity.position._value);
+					entity.position._value = Cesium.Cartesian3.fromRadians(cartographicPosition.longitude, cartographicPosition.latitude, cartographicPosition.height - deltaHeight);
+				}
+			}
+
+			$('#toolbox').fadeIn(500);
+			$('#scenereenoverlay').fadeIn(500);
+	    });
 	}
 
 	main.showEntity 		= function(title, visible)
@@ -108,5 +132,200 @@ var KMZLoader 	= function()
 				main.showEntity(title, false);
 			}	
 		})
+	}
+
+	main.showFlightRegion 		= function(visible)
+	{
+		if (load == false) return;
+
+		if (visible)
+		{
+			$('#toolbox').hide();
+			kmlDataSrc.show = false;
+
+			if (polyline != undefined)
+			{
+				for (var i = 0; i < polyline.length; i ++)
+				{
+					polyline.get(i).show = true;
+				}
+
+				for (var i = 0; i < polygons.length; i ++)
+				{
+					polygons[i].show = true;
+				}
+
+			}
+
+			var entities = folderMapEntities.get('Features');
+			for (var i = 0; i < 200; i ++)
+			{
+				var position1 = entities[i].position._value;
+				var position2 = entities[i + 1].position._value;
+
+				if (position1.x == position2.x && position1.y == position2.y && position1.z == position2.z)
+				{
+					continue;
+				}
+
+				drawFlightLine(position1, position2);
+			}
+		}
+		else
+		{
+			$('#toolbox').show();
+			kmlDataSrc.show = true;
+
+			if (polyline != undefined)
+			{
+				for (var i = 0; i < polyline.length; i ++)
+				{
+					polyline.get(i).show = false;
+				}
+
+				for (var i = 0; i < polygons.length; i ++)
+				{
+					polygons[i].show = false;
+				}
+
+			}
+		}
+	}
+
+	function drawFlightLine(position1, position2)
+	{
+		if (polyline == undefined)
+		{
+			polyline       = viewer.scene.primitives.add(new Cesium.PolylineCollection());
+		}
+
+		polyline.add({
+            positions : [
+                position1,
+                position2
+            ],
+            width : 10.0,
+            material : Cesium.Material.fromType(Cesium.Material.PolylineGlowType, {
+                color   : Cesium.Color.YELLOW
+            })
+        });
+
+        var carto1 = Cesium.Ellipsoid.WGS84.cartesianToCartographic(position1);
+        var carto2 = Cesium.Ellipsoid.WGS84.cartesianToCartographic(position2);
+        
+        var heading = getHeading(carto1, carto2) + Math.PI / 2;
+        var rectangles = [];
+
+        camera.position = position1;
+	    camera.setView({
+	        orientation: {
+	            heading : heading,
+	            pitch : Cesium.Math.toRadians(-90 + angle),
+	            roll : 0
+	        }
+	    });
+
+	    rectangles.push(getRayFocusPosition(camera.positionWC, camera.directionWC));
+
+	    camera.position = position1;
+	    camera.setView({
+	        orientation: {
+	            heading : heading,
+	            pitch : Cesium.Math.toRadians(-90 - angle),
+	            roll : 0
+	        }
+	    });
+
+	    rectangles.push(getRayFocusPosition(camera.positionWC, camera.directionWC));
+
+	    camera.position = position2;
+	    camera.setView({
+	        orientation: {
+	            heading : heading,
+	            pitch : Cesium.Math.toRadians(-90 - angle),
+	            roll : 0
+	        }
+	    });
+
+	    rectangles.push(getRayFocusPosition(camera.positionWC, camera.directionWC));
+
+	    camera.position = position2;
+	    camera.setView({
+	        orientation: {
+	            heading : heading,
+	            pitch : Cesium.Math.toRadians(-90 + angle),
+	            roll : 0
+	        }
+	    });
+
+	    rectangles.push(getRayFocusPosition(camera.positionWC, camera.directionWC));
+
+	    var color = Cesium.Color.YELLOW;
+
+	    color = color.withAlpha(0.5);
+
+	    for (var i = 0; i < rectangles.length; i ++)
+	    {
+	    	if (rectangles[i] == undefined) return;
+	    }
+
+	    polyline.add({
+            positions : [
+                position1,
+                rectangles[0]
+            ],
+            width : 10.0,
+            material : Cesium.Material.fromType(Cesium.Material.PolylineGlowType, {
+                color   : Cesium.Color.RED
+            })
+        });
+
+        polyline.add({
+            positions : [
+                position1,
+                rectangles[1]
+            ],
+            width : 10.0,
+            material : Cesium.Material.fromType(Cesium.Material.PolylineGlowType, {
+                color   : Cesium.Color.RED
+            })
+        });
+
+	    polyline.add({
+            positions : [
+                position2,
+                rectangles[2]
+            ],
+            width : 10.0,
+            material : Cesium.Material.fromType(Cesium.Material.PolylineGlowType, {
+                color   : Cesium.Color.RED
+            })
+        });
+
+        polyline.add({
+            positions : [
+                position2,
+                rectangles[3]
+            ],
+            width : 10.0,
+            material : Cesium.Material.fromType(Cesium.Material.PolylineGlowType, {
+                color   : Cesium.Color.RED
+            })
+        });
+
+	    var region  = new Cesium.GroundPrimitive({
+	        geometryInstances : new Cesium.GeometryInstance({
+	            geometry : new Cesium.PolygonGeometry({
+	                polygonHierarchy : { positions : rectangles}
+	            }),
+	            attributes: {
+	                color: Cesium.ColorGeometryInstanceAttribute.fromColor(color)
+	            }
+	        })
+	    });
+	    
+	    viewer.scene.groundPrimitives.add(region);
+
+	    polygons.push(region);
 	}
 }

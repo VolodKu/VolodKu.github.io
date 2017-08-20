@@ -76,15 +76,15 @@ body
     position 	: absolute;
 }
 
-#color
+#replay
 {
-	background-image: url("../images/color.png");
+	background-image: url("../images/replay.png");
 	background-size: cover;
 }
 
-#color.sel
+#replay.sel
 {
-	background-image: url("../images/color_select.png");
+	background-image: url("../images/replay_select.png");
 	background-size: cover;
 }
 
