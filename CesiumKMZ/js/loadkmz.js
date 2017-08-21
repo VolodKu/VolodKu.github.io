@@ -158,18 +158,20 @@ var KMZLoader 	= function()
 			}
 
 			var entities = folderMapEntities.get('Features');
-			for (var i = 0; i < 200; i ++)
-			{
-				var position1 = entities[i].position._value;
-				var position2 = entities[i + 1].position._value;
+			// for (var i = 0; i < 200; i ++)
+			// {
+			// 	var position1 = entities[i].position._value;
+			// 	var position2 = entities[i + 1].position._value;
 
-				if (position1.x == position2.x && position1.y == position2.y && position1.z == position2.z)
-				{
-					continue;
-				}
+			// 	if (position1.x == position2.x && position1.y == position2.y && position1.z == position2.z)
+			// 	{
+			// 		continue;
+			// 	}
 
-				drawFlightLine(position1, position2);
-			}
+			// 	drawFlightLine(position1, position2);
+			// }
+
+			drawLidarInfo();
 		}
 		else
 		{
@@ -269,49 +271,49 @@ var KMZLoader 	= function()
 	    	if (rectangles[i] == undefined) return;
 	    }
 
-	    polyline.add({
-            positions : [
-                position1,
-                rectangles[0]
-            ],
-            width : 10.0,
-            material : Cesium.Material.fromType(Cesium.Material.PolylineGlowType, {
-                color   : Cesium.Color.RED
-            })
-        });
+	    // polyline.add({
+     //        positions : [
+     //            position1,
+     //            rectangles[0]
+     //        ],
+     //        width : 10.0,
+     //        material : Cesium.Material.fromType(Cesium.Material.PolylineGlowType, {
+     //            color   : Cesium.Color.RED
+     //        })
+     //    });
 
-        polyline.add({
-            positions : [
-                position1,
-                rectangles[1]
-            ],
-            width : 10.0,
-            material : Cesium.Material.fromType(Cesium.Material.PolylineGlowType, {
-                color   : Cesium.Color.RED
-            })
-        });
+     //    polyline.add({
+     //        positions : [
+     //            position1,
+     //            rectangles[1]
+     //        ],
+     //        width : 10.0,
+     //        material : Cesium.Material.fromType(Cesium.Material.PolylineGlowType, {
+     //            color   : Cesium.Color.RED
+     //        })
+     //    });
 
-	    polyline.add({
-            positions : [
-                position2,
-                rectangles[2]
-            ],
-            width : 10.0,
-            material : Cesium.Material.fromType(Cesium.Material.PolylineGlowType, {
-                color   : Cesium.Color.RED
-            })
-        });
+	    // polyline.add({
+     //        positions : [
+     //            position2,
+     //            rectangles[2]
+     //        ],
+     //        width : 10.0,
+     //        material : Cesium.Material.fromType(Cesium.Material.PolylineGlowType, {
+     //            color   : Cesium.Color.RED
+     //        })
+     //    });
 
-        polyline.add({
-            positions : [
-                position2,
-                rectangles[3]
-            ],
-            width : 10.0,
-            material : Cesium.Material.fromType(Cesium.Material.PolylineGlowType, {
-                color   : Cesium.Color.RED
-            })
-        });
+     //    polyline.add({
+     //        positions : [
+     //            position2,
+     //            rectangles[3]
+     //        ],
+     //        width : 10.0,
+     //        material : Cesium.Material.fromType(Cesium.Material.PolylineGlowType, {
+     //            color   : Cesium.Color.RED
+     //        })
+     //    });
 
 	    var region  = new Cesium.GroundPrimitive({
 	        geometryInstances : new Cesium.GeometryInstance({
@@ -327,5 +329,165 @@ var KMZLoader 	= function()
 	    viewer.scene.groundPrimitives.add(region);
 
 	    polygons.push(region);
+	}
+
+	var arrFlight = [
+		493, 522,
+		525, 553,
+		557, 585,
+		589, 617,
+		621, 648,
+		652, 680
+	];
+
+	function drawLidarInfo()
+	{
+		if (polyline == undefined)
+		{
+			polyline       = viewer.scene.primitives.add(new Cesium.PolylineCollection());
+		}
+
+		var entities = folderMapEntities.get('Features');
+
+		for (var j = 0; j < arrFlight.length; j = j + 2)
+		{
+			var position1 = entities[arrFlight[j]].position._value;
+			var position2 = entities[arrFlight[j + 1]].position._value;
+
+			polyline.add({
+	            positions : [
+	                position1,
+	                position2
+	            ],
+	            width : 10.0,
+	            material : Cesium.Material.fromType(Cesium.Material.PolylineGlowType, {
+	                color   : Cesium.Color.GREEN
+	            })
+	        });
+
+	        var carto1 = Cesium.Ellipsoid.WGS84.cartesianToCartographic(position1);
+	        var carto2 = Cesium.Ellipsoid.WGS84.cartesianToCartographic(position2);
+	        
+	        var heading = getHeading(carto1, carto2) + Math.PI / 2;
+	        var rectangles = [];
+
+	        camera.position = position1;
+		    camera.setView({
+		        orientation: {
+		            heading : heading,
+		            pitch : Cesium.Math.toRadians(-90 + angle),
+		            roll : 0
+		        }
+		    });
+
+		    rectangles.push(getRayFocusPosition(camera.positionWC, camera.directionWC));
+
+		    camera.position = position1;
+		    camera.setView({
+		        orientation: {
+		            heading : heading,
+		            pitch : Cesium.Math.toRadians(-90 - angle),
+		            roll : 0
+		        }
+		    });
+
+		    rectangles.push(getRayFocusPosition(camera.positionWC, camera.directionWC));
+
+		    camera.position = position2;
+		    camera.setView({
+		        orientation: {
+		            heading : heading,
+		            pitch : Cesium.Math.toRadians(-90 - angle),
+		            roll : 0
+		        }
+		    });
+
+		    rectangles.push(getRayFocusPosition(camera.positionWC, camera.directionWC));
+
+		    camera.position = position2;
+		    camera.setView({
+		        orientation: {
+		            heading : heading,
+		            pitch : Cesium.Math.toRadians(-90 + angle),
+		            roll : 0
+		        }
+		    });
+
+		    rectangles.push(getRayFocusPosition(camera.positionWC, camera.directionWC));
+
+		    var color = Cesium.Color.MEDIUMSPRINGGREEN  ;
+
+		    color = color.withAlpha(0.5);
+
+		    for (var i = 0; i < rectangles.length; i ++)
+		    {
+		    	if (rectangles[i] == undefined) return;
+		    }
+
+		    var region = viewer.entities.add({
+			    polygon : {
+			        hierarchy : rectangles,
+			        material : color,
+			        closeTop : true,
+			        closeBottom : true
+			    }
+			});
+
+			drawTerrainLine(rectangles[0], rectangles[1]);
+			drawTerrainLine(rectangles[1], rectangles[2]);
+			drawTerrainLine(rectangles[2], rectangles[3]);
+			drawTerrainLine(rectangles[3], rectangles[0]);
+
+		    // var region  = new Cesium.GroundPrimitive({
+		    //     geometryInstances : new Cesium.GeometryInstance({
+		    //         geometry : new Cesium.PolygonGeometry({
+		    //             polygonHierarchy : { positions : rectangles}
+		    //         }),
+		    //         attributes: {
+		    //             color: Cesium.ColorGeometryInstanceAttribute.fromColor(color)
+		    //         }
+		    //     })
+		    // });
+
+		    // viewer.scene.groundPrimitives.add(region);
+
+		    polygons.push(region);
+		}
+	}
+
+	function drawTerrainLine(position1, position2)
+	{
+		var carto1 	= Cesium.Ellipsoid.WGS84.cartesianToCartographic(position1);
+		var carto2 	= Cesium.Ellipsoid.WGS84.cartesianToCartographic(position2);
+		
+		var length = 1000;
+
+		var terrainSamplePositions = [];
+        for (var i = 0; i < length; ++i) {
+            var lon = Cesium.Math.lerp(carto1.longitude, carto2.longitude, i / (length - 1));
+            var lat = Cesium.Math.lerp(carto1.latitude, carto2.latitude, i / (length - 1));
+            var position = new Cesium.Cartographic(lon, lat);
+            terrainSamplePositions.push(position);
+        }
+
+        Cesium.when(Cesium.sampleTerrainMostDetailed(viewer.terrainProvider, terrainSamplePositions), function(samples) {
+            polygons.push(viewer.entities.add({
+                polyline : {
+                    positions : Cesium.Ellipsoid.WGS84.cartographicArrayToCartesianArray(samples),
+                    followSurface : false,
+                    width : 3,
+                    material : new Cesium.PolylineOutlineMaterialProperty({
+                        color : Cesium.Color.WHITE,
+                        outlineWidth : 2,
+                        outlineColor : Cesium.Color.WHITE
+                    }),
+                    depthFailMaterial : new Cesium.PolylineOutlineMaterialProperty({
+                        color : Cesium.Color.WHITE,
+                        outlineWidth : 2,
+                        outlineColor : Cesium.Color.WHITE
+                    })
+                }
+            }));
+        });
 	}
 }
