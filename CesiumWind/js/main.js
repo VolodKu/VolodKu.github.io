@@ -75,8 +75,6 @@ function main()
 
     setCanvasSize(width, height);
 
-    var videoElement = document.getElementById('trailer');
-
     windEntity = viewer.entities.add({
     rectangle: {
         coordinates: Cesium.Rectangle.fromDegrees(-180,-89.9,180, 89.9),
