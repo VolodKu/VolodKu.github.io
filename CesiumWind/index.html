@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--device-width,-->
+    <meta name="viewport" content="width=initial-scale=0.5, maximum-scale=0.5, minimum-scale=0.5, user-scalable=no">
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+    
+    <title>Wind Show</title>
+    <script type="text/javascript" src="js/lib/jquery.min.js"></script>
+    <script type="text/javascript" src="js/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="js/lib/FileSaver.js"></script>
+    <script type="text/javascript" src="js/lib/windable.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.min.js" defer></script>
+
+    <script src="js/Cesium/Cesium.js"></script>
+    <script src="js/touch.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <style>
+        @import url(js/Cesium/Widgets/widgets.css);
+        html, body, #cesiumContainer {
+            width: 100%; 
+            height: 100%; 
+            margin: 0; 
+            padding: 0; 
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body onload="main();">
+    <div id="preview">
+        <div id="previewContent">
+            <div id="cesiumContainer"></div>
+        </div>
+    </div>
+
+    <canvas id="test_wind" style="
+        z-index: 1000;
+        width: 1446px;
+        height: 974px;
+    "></canvas>
+
+    <video id="trailer" style="display: none;" autoplay loop crossorigin controls>
+        <source src="https://cesiumjs.org/videos/Sandcastle/big-buck-bunny_trailer.webm" type="video/webm">
+        <source src="https://cesiumjs.org/videos/Sandcastle/big-buck-bunny_trailer.mp4" type="video/mp4">
+        <source src="https://cesiumjs.org/videos/Sandcastle/big-buck-bunny_trailer.mov" type="video/quicktime">
+        Your browser does not support the <code>video</code> element.
+    </video>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
