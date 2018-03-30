@@ -1,0 +1,179 @@
+.site-index .panorama{
+    height: 600px;
+}
+
+body
+{
+	overflow: hidden;
+	margin : 0px;
+	padding: 0px;
+}
+
+#preview {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+#previewContent {
+	position: absolute;
+	top: 0px;
+	bottom: 0;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+#previewContent:-webkit-full-screen {
+	top: 0;
+}
+
+#previewContent:-ms-fullscreen {
+	top: 0;
+}
+
+#previewContent:-moz-full-screen {
+	top: 0;
+}
+
+#previewContent:fullscreen {
+	top: 0;
+}
+
+/*.cesium-viewer-animationContainer
+{
+	display: none;
+}*/
+
+.cesium-viewer-bottom
+{
+	display: none;
+}
+
+.cesium-widget-credits
+{
+	display: none;
+}
+
+.tool
+{
+	width: 48px;
+	height: 48px;
+	float: left;
+	margin-right: 10px;
+	background-color: rgba(80, 80, 80, 0.9);
+	cursor: pointer;
+}
+
+#toolbar 
+{ 
+	margin		: 15px;
+    padding 	: 2px 5px;
+    position 	: absolute;
+}
+
+#replay
+{
+	background-image: url("../images/replay.png");
+	background-size: cover;
+}
+
+#replay.sel
+{
+	background-image: url("../images/replay_select.png");
+	background-size: cover;
+}
+
+#save
+{
+	background-image: url("../images/save.png");
+	background-size: cover;
+}
+
+#save:hover
+{
+	background-image: url("../images/save_select.png");
+	background-size: cover;
+}
+
+#open
+{
+	background-image: url("../images/open.png");
+	background-size: cover;
+}
+
+#open:hover
+{
+	background-image: url("../images/open_select.png");
+	background-size: cover;
+}
+
+#toolbox
+{
+	width: 300px;
+    height: 410px;
+    background: white;
+    position: absolute;
+    border: 2px solid #bebebe;
+    left: 5px;
+    top: 80px;
+}
+
+#title
+{
+	color: #5D5D5D;
+    font-size: 25px;
+    text-align: center;
+}
+
+.centre {
+	position: absolute;
+	left: 20px;
+}
+
+input {
+	display: none;
+}
+
+label {
+	font-size: 24px;
+	color: #bfbfbf;
+	display: inline-block;
+	padding: 0 0 0 1em;
+	cursor: pointer;
+}
+.checkbox{
+	
+}
+label:before {
+	content: '';
+	display: inline-block;
+	background: url('../images/check.png') no-repeat;
+	background-size: cover;
+	position: absolute;
+	left: 0;
+	top: 5px;
+	height: 20px;
+	width: 20px;
+	margin-right: 10px;
+	border-radius: 80%;
+	box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, .2);
+	box-sizing: border-box;
+	border: 10px solid #fff;
+	transition: border .3s ease;
+}
+
+input:checked + label:before {
+	border-color: #fff;
+	border-width: 3px;
+}
+input + label {
+	transition: color .7s ease;
+}
+input:checked + label {
+	color: #5D5D5D;
+}
